@@ -67,7 +67,7 @@ void TScrollBar::draw()
 void TScrollBar::drawPos( int pos )
 {
     TDrawBuffer b;
-    char *aChars;
+    unsigned char *aChars;
 
     // SET: If we can't remap characters use the originals
     /*if (TScreen::codePageVariable())
