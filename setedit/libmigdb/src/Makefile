@@ -3,8 +3,8 @@ PREFIX=/usr
 
 all: libmigdb.a
 
-CFLAGS=-O2 -Wall -gstabs+3 -I.
-CXXFLAGS=-O2 -Wall -gstabs+3
+CFLAGS=-O2 -Wall -I.
+CXXFLAGS=-O2 -Wall
 LDLIBS=
 
 connect.o: mi_gdb.h
