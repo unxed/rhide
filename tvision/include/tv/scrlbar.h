@@ -26,7 +26,7 @@ Modified by Robert H”hne to be used for RHIDE.
 class TRect;
 struct TEvent;
 
-typedef char TScrollChars[5];
+typedef unsigned char TScrollChars[5];
 
 class CLY_EXPORT TScrollBar : public TView
 {

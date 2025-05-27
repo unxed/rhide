@@ -5,8 +5,8 @@
 # To specify the compilation flags define the CFLAGS environment variable.
 #
 
-require "miscperl.pl";
-require "conflib.pl";
+require "./miscperl.pl";
+require "./conflib.pl";
 
 # If the script is newer discard the cache.
 #GetCache() unless (-M 'config.pl' < -M 'configure.cache');
