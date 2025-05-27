@@ -4,5 +4,5 @@
 #define Uses_TProgress
 #include <settvuti.h>
 
-s(Progress);
+set_s(Progress);
 
