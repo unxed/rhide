@@ -1721,6 +1721,7 @@ host_os=`echo $ac_cv_host | sed 's/^\([^-]*\)-\([^-]*\)-\(.*\)$/\3/'`
 subdirs="$subdirs libtvuti"
 
 case "$host" in
+  *?64-*-linux*) rhide_OS=Linux ;;
   i?86-*-linux*) rhide_OS=Linux ;;
   i?86-pc-msdosdjgpp) rhide_OS=DJGPP ;;
   *-pc-cygwin) rhide_OS=CYGWIN ;;
@@ -1858,6 +1859,7 @@ echo "$as_me: WARNING: Could not find Turbo Vision header files.
 fi
 
 TV_OBJ_SEARCH="$TV_INC/../`echo $rhide_OS | sed -e s,Linux,linux,g -e s,CYGWIN,win32,g` \
+$TV_INC/../makes \
 $TV_INC/../../lib"
 
 echo "$as_me:1863: checking for Turbo Vision libraray" >&5
