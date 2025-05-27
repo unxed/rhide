@@ -63,7 +63,7 @@ public:                                   \
                                           \
 const char * const CLASS::name = #NAME;
 
-#define s(TYPE)\
+#define set_s(TYPE)\
   TStreamableClass R##TYPE( T##TYPE::name, T##TYPE::build, __DELTA(T##TYPE));
 
 #endif  // __SET_UTIL_H

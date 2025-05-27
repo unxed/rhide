@@ -3,8 +3,8 @@
 # see copyrigh file for details
 #
 
-require "miscperl.pl";
-require "conflib.pl";
+require "./miscperl.pl";
+require "./conflib.pl";
 
 $conf{'infview'}='yes';
 #$conf{'HAVE_BZIP2'}='yes';
@@ -157,7 +157,7 @@ $TVInclude='../'.$TVInclude if (substr($TVInclude,0,2) eq '..');
 if ($OS eq 'DOS')
   {
    $MakeDefsRHIDE[0]='RHIDE_STDINC=$(DJDIR)/include $(DJDIR)/lang/cxx $(DJDIR)/lib/gcc-lib';
-   $MakeDefsRHIDE[1]='RHIDE_OS_LIBS=-lrhtv ';
+   $MakeDefsRHIDE[1]='RHIDE_OS_LIBS=-lrhtv -lgpm';
    $MakeDefsRHIDE[1].='-l'.substr($stdcxx,2).' ';
    $MakeDefsRHIDE[1].='-lintl ' unless (@conf{'intl'} eq 'no');
    $MakeDefsRHIDE[1].='-liconv ' if (@conf{'iconv'} eq 'yes');
@@ -206,7 +206,7 @@ else # Win32
    $MakeDefsRHIDE[1].='-lbz2 ' if (@conf{'HAVE_BZIP2'} eq 'yes');
    $MakeDefsRHIDE[1].='-l'.@conf{'mp3lib'}.' ' if (@conf{'mp3'} eq 'yes');
   }
-$MakeDefsRHIDE[1].='-lz ';
+$MakeDefsRHIDE[1].='-lz -lgpm ';
 $MakeDefsRHIDE[1].='-lpcre '    if @conf{'HAVE_PCRE_LIB'} eq 'yes';
 $MakeDefsRHIDE[1].='-lmigdb '   if @conf{'HAVE_GDB_MI'} eq 'yes';
 $MakeDefsRHIDE[1].='-lmss '     if @conf{'mss'} eq 'yes';
@@ -456,9 +456,9 @@ sub SeeCommandLine
     elsif ($i eq '--debug')
       {
        $conf{'XCFLAGS'}=
-       $conf{'XCXXFLAGS'}='-O3 -fomit-frame-pointer -ffast-math -gstabs+3';
+       $conf{'XCXXFLAGS'}='-O3 -fomit-frame-pointer -ffast-math';
        $conf{'CFLAGS'}=
-       $conf{'CXXFLAGS'}='-O2 -Wall -Werror -gstabs+3';
+       $conf{'CXXFLAGS'}='-O2 -Wall -Werror';
       }
     elsif ($i eq '--with-mixer')
       {

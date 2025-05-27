@@ -120,7 +120,7 @@ public:
 
 SetDefStreamOperators(TFileEntryCollection)
 const char * const TFileEntryCollection::name="TFileEntryCollection";
-s(FileEntryCollection);
+set_s(FileEntryCollection);
 
 void TFileEntryCollection::insert(entryInfo *entry)
 {

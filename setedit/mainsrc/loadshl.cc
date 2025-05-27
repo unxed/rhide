@@ -1244,7 +1244,12 @@ pcre *PCRECompileRegEx(char *text, PCREData &p)
  if (!ret)
     return NULL;
 
- int matchs=(pcre_info(ret,0,0)+1)*3;
+ //int matchs=(pcre_info(ret,0,0)+1)*3;
+
+ int matchs = 0;
+ pcre_fullinfo(ret, nullptr, PCRE_INFO_CAPTURECOUNT, &matchs);
+ matchs = (matchs + 1) * 3;
+
  if (matchs>p.PCREMaxMatchs)
     p.PCREMaxMatchs=matchs;
 

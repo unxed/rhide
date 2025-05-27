@@ -28,7 +28,7 @@ __link( RScrollBar )
 __link( RScroller )
 __link( RNoCaseStringCollection )
 
-s(InfViewer);
-s(InfWindow);
-s(HisCollection);
+set_s(InfViewer);
+set_s(InfWindow);
+set_s(HisCollection);
 

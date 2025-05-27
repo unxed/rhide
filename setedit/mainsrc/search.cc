@@ -432,7 +432,12 @@ int TCEditor::CompilePCRE(char *searchStr)
 
  // For PCRE 2.x this value should be enlarged to left space needed by
  // pcre_exec 
- PCREMaxMatchs=(pcre_info(CompiledPCRE,0,0)+1)*3;
+ // PCREMaxMatchs=(pcre_info(CompiledPCRE,0,0)+1)*3;
+ int ovector_size;
+ if (pcre_fullinfo(CompiledPCRE, NULL, PCRE_INFO_CAPTURECOUNT, &ovector_size) < 0)
+   ovector_size = 0;
+ PCREMaxMatchs = (ovector_size + 1) * 3;
+
  PCREMatchs=new int[PCREMaxMatchs];
 
  if (!PCREMatchs)

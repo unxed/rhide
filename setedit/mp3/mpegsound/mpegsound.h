@@ -170,7 +170,7 @@ typedef struct
 typedef struct
 {
   int tablename;
-  unsigned int xlen,ylen;
+  int xlen,ylen;
   unsigned int linbits;
   unsigned int treelen;
   const unsigned int (*val)[2];

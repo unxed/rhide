@@ -21,7 +21,7 @@
 typedef struct
 {
  char *name;
- unsigned command;
+ long command;
 } edCList;
 
 static edCList List[] =

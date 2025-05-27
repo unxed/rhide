@@ -533,7 +533,7 @@ int main(void)
 #   Determines the flags to be used for compilation. Mechanism:@*
 # 1) Cached CFLAGS key.@*
 # 2) Environment variable CFLAGS.@*
-# 3) -O2 -gstabs+3 (-pipe if UNIX).@*
+# 3) -O2 (-pipe if UNIX).@*
 #   The result is stored in the 'CFLAGS' configuration key.
 #
 # Return: The value determined.
@@ -561,7 +561,7 @@ sub FindCFLAGS
       }
     else
       {
-       $ret='-O2'; # -gstabs+3
+       $ret='-O2';
        # In UNIX pipes are in memory and allows multithreading so they are
        # usually faster. In Linux that's faster.
        $ret.=' -pipe' if $UsePipe;
@@ -610,7 +610,7 @@ sub FindLDExtraDirs()
 # 2) Environment variable CXXFLAGS.@*
 # 3) Cached CFLAGS key.@*
 # 4) Environment variable CFLAGS.@*
-# 5) -O2 -gstabs+3 (-pipe if UNIX).@*
+# 5) -O2 (-pipe if UNIX).@*
 #   The result is stored in the 'CXXFLAGS' configuration key.
 #
 # Return: The value determined.
@@ -637,7 +637,7 @@ sub FindCXXFLAGS
     $ret=@ENV{'CFLAGS'} unless $ret;
     if (!$ret)
       {
-       $ret='-O2'; # -gstabs+3';
+       $ret='-O2';
        $ret.=' -pipe' if $UsePipe;
        $ret.=' -L/usr/local/include' if ($OSf eq 'FreeBSD');
        $conf{'EXTRA_INCLUDE_DIRS'}.=' /usr/local/include' if ($OSf eq 'FreeBSD');

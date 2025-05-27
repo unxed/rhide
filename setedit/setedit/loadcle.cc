@@ -329,7 +329,11 @@ pcre *CLECompileRegEx(char *text, int &subX)
     return 0;
    }
 
- subX=(pcre_info(ret,0,0)+1)*3;
+ // subX=(pcre_info(ret,0,0)+1)*3;
+ int num_subs = 0;
+ pcre_fullinfo(ret, nullptr, PCRE_INFO_CAPTURECOUNT, &num_subs);
+ subX = (num_subs + 1) * 3;
+
  return ret;
 }
 

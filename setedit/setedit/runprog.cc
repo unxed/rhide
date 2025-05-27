@@ -58,6 +58,8 @@
 #include <signal.h>
 #endif
 
+#include <stdint.h>
+
 // Values for Options
 const unsigned opUseOSScreen=1,opNeverFork=2,opAlwaysBkgd=4,opJumpFirstError=8,
                opNoRedirOut=16, opNoBeep=32, opNoDebugStop=64, opNoBkpMove=128,
@@ -113,8 +115,12 @@ void ConfigureRunCommand(void)
    {
     if (!CurrentParser)
        CurrentParser=newStr("GNU");
-    if (!list->search((void *)CurrentParser,box.tl.selection))
-       box.tl.selection=0;
+    //if (!list->search((void *)CurrentParser,box.tl.selection))
+    //   box.tl.selection=0;
+    ccIndex tmpSel = box.tl.selection;
+    if (!list->search((void *)CurrentParser, tmpSel))
+        tmpSel = 0;
+    box.tl.selection = tmpSel;
    }
 
  TSViewCol *col=new TSViewCol(new TDialog(TRect(1,1,1,1),__("Command to run")));

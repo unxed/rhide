@@ -16,5 +16,5 @@ __link( RWindow )
 __link( RScrollBar )
 __link( RScroller )
 
-s(ManWindow);
-s(ManPageView);
+set_s(ManWindow);
+set_s(ManPageView);
