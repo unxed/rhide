@@ -4,6 +4,6 @@
 #define Uses_TNoSortedStringCollection
 #include <settvuti.h>
 
-s(NoSortedStringCollection);
+set_s(NoSortedStringCollection);
 
 

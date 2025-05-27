@@ -4,5 +4,5 @@
 #define Uses_TProgressBar
 #include <settvuti.h>
 
-s(ProgressBar);
+set_s(ProgressBar);
 

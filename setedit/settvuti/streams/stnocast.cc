@@ -18,6 +18,6 @@
 #define Uses_TStringCollectionW
 #include <settvuti.h>
 
-s(NoCaseStringCollection);
-s(StringCollectionW);
+set_s(NoCaseStringCollection);
+set_s(StringCollectionW);
 
