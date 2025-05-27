@@ -1,0 +1,3227 @@
+msgid  "Writing Makefile : %s\n"
+msgstr ""
+
+msgid  "-o needs an argument\n"
+msgstr "-o tarvitsee  parametrin \n"
+
+msgid  "a projectfile must be given\n"
+msgstr "projektitiedosto t„ytyy antaa\n"
+
+msgid  "-o and -r are not allowed together"
+msgstr ""
+
+msgid  "error reading projectfile %s\n"
+msgstr "virhe luettaessa projektitiedostoa %s\n"
+
+msgid  "Frame disabled"
+msgstr "Kehys estetty"
+
+msgid  "Frame"
+msgstr "Kehys"
+
+msgid  "Frame icons"
+msgstr "Kehyksen kuvakkeet"
+
+msgid  "Scroll bar page"
+msgstr "Vierityspalkki"
+
+msgid  "Scroll bar icons"
+msgstr "Vierityspalkin painikkeet"
+
+msgid  "Static text"
+msgstr "Vakio teksti"
+
+msgid  "Selected text"
+msgstr "Valittu teksti"
+
+msgid  "reserved"
+msgstr "varattu"
+
+msgid  "Frame/background"
+msgstr "Kehyksen pohjav„ri"
+
+msgid  "normal text"
+msgstr "normaali teksti"
+
+msgid  "marked text"
+msgstr "merkitty teksti"
+
+msgid  "comment"
+msgstr "kommentti"
+
+msgid  "reserved word"
+msgstr "varattu sana"
+
+msgid  "identifier"
+msgstr "muuttuja"
+
+msgid  "symbol"
+msgstr "symboli"
+
+msgid  "string"
+msgstr "merkkijono"
+
+msgid  "integer"
+msgstr "kokonaisluku"
+
+msgid  "float"
+msgstr "liukuluku"
+
+msgid  "octal"
+msgstr "oktaali"
+
+msgid  "hex"
+msgstr "heksadesimaali"
+
+msgid  "character"
+msgstr "merkki"
+
+msgid  "preprocessor"
+msgstr "esik„sittelij„"
+
+msgid  "illegal char"
+msgstr "v„„r„ merkki"
+
+msgid  "user defined words"
+msgstr "k„ytt„j„n m„„rittelem„t sanat"
+
+msgid  "CPU line"
+msgstr "Suoritus rivi"
+
+msgid  "Breakpoint"
+msgstr "Keskeytyskohta"
+
+msgid  "symbol2"
+msgstr "symboli 2"
+
+msgid  "Cross cursor"
+msgstr "Risti kursori"
+
+msgid  "editor statusline"
+msgstr "Editorin tilarivi"
+
+msgid  "parens matching"
+msgstr "sulkujen t„sm„ys"
+
+msgid  "rectangle block"
+msgstr "suorakulmio lohko"
+
+msgid  "Disassembler window"
+msgstr ""
+
+msgid  "Could not find the source file %s."
+msgstr "Ei l”ydy l„hdetiedostoa %s."
+
+msgid  "Open a file"
+msgstr "Avaa tiedosto"
+
+msgid  "~N~ame"
+msgstr "~N~imi"
+
+msgid  "Add '%s' to the search path for source files"
+msgstr "Lis„„ '%s' l„hdetiedostojen hakupolkuun"
+
+msgid  "Untitled"
+msgstr "Nime„m„t”n"
+
+msgid  "Source has been modified. Rebuild it?"
+msgstr "L„hdett„ on muutettu. Rakennetaanko se?"
+
+msgid  "Program exit code: %d (0x%04x)"
+msgstr "Ohjelman poistumis koodi: %d (0x%04x)"
+
+msgid  "ready"
+msgstr "valmis"
+
+msgid  "arguments for GREP"
+msgstr "parametrit GREP:lle"
+
+msgid  "There are only %d parameters for GREP. Continue ?"
+msgstr "GREP:ille on vain %d parametri„. Jatketaanko?"
+
+msgid  "running GREP:"
+msgstr "ajetaan GREP:i„."
+
+msgid  "executing: "
+msgstr "suoritetaan: "
+
+msgid  "Output to stderr:"
+msgstr ""
+
+msgid  "Output to stdout:"
+msgstr ""
+
+msgid  "No project"
+msgstr ""
+
+msgid  "return value: %d\n"
+msgstr "paluu arvo: %d\n"
+
+msgid  "checking file time for '%s'\n"
+msgstr "tarkistetaan tiedoston aikam„„re: %s\n"
+
+msgid  "found '%s' on desktop, time: %08lx\n"
+msgstr "l”ydetty '%s' ty”p”yd„lt„, aikam„„re %08lx\n"
+
+msgid  "and updating it"
+msgstr "ja p„ivitet„„n se"
+
+msgid  "found '%s' not in filetime cache, time: %08lx\n"
+msgstr "l”ydetty '%s', joka ei ole tiedostoaika muistissa: %08lx\n"
+
+msgid  "found '%s' in filetime cache "
+msgstr "l”ydetty '%s' tiedostoaika muistista "
+
+msgid  ",time: %08lx\n"
+msgstr ", aika: %08lx\n"
+
+msgid  "checking"
+msgstr "tarkistan"
+
+msgid  "Could not find the source file '%s'. Make sure, that the file exist "
+"or check the settings in 'Options/Directories' for the correct paths."
+msgstr "Ei l”ydy tiedostoa '%s'. Tarkista ett„ tiedosto on olemassa tai "
+"tarkista hakemisto asetukset kohdasta 'Asetukset/Hakemistot'."
+
+msgid  "is up to date"
+msgstr "on ajan tasalla"
+
+msgid  "is"
+msgstr "on"
+
+msgid  "newer"
+msgstr "uudempi"
+
+msgid  "older"
+msgstr "vanhempi"
+
+msgid  "than"
+msgstr "kuin"
+
+msgid  "must rebuild"
+msgstr "t„ytyy uudellen rakentaa"
+
+msgid  "rebuilding of"
+msgstr "uudelleen rakennetaan"
+
+msgid  "success"
+msgstr "onnistui"
+
+msgid  "error"
+msgstr "virhe"
+
+msgid  "clearing the filetime cache\n"
+msgstr "tyhjennet„„n tiedostoaika muisti\n"
+
+msgid  "in function "
+msgstr "funktiossa "
+
+msgid  "Call frame traceback:"
+msgstr "Kutsukehys takaisin j„ljitys:"
+
+msgid  "contents of stderr from "
+msgstr "'stderr' sis„lt” "
+
+msgid  "contents of stdout from "
+msgstr "'stdout' sis„lt” "
+
+msgid  "Info Viewer"
+msgstr "Info selain"
+
+msgid  "show information about RHIDE"
+msgstr "n„ytt„„ tietoja RHIDE:st„"
+
+msgid  "Creates a small bug report"
+msgstr ""
+
+msgid  "Creates a sample bug report"
+msgstr ""
+
+msgid  "Start the FSDB debugger"
+msgstr "Aloittaa FSDB-debuggerin"
+
+msgid  "Running GREP (arguments are prompted)"
+msgstr "K„ynnist„„ GREP:in (parametrit kysyt„„n)"
+
+msgid  "Start the GDB debugger"
+msgstr "Aloittaa GDB-debuggerin"
+
+msgid  "repaints the desktop"
+msgstr "p„ivitt„„ ty”p”yd„n"
+
+msgid  "Powerful builtin calculator"
+msgstr ""
+
+msgid  "A nice puzzle game"
+msgstr ""
+
+msgid  "A simple calender"
+msgstr ""
+
+msgid  "A table with all the ASCII characters"
+msgstr ""
+
+msgid  "Menu entries for handling with files"
+msgstr "Valikko valinnat tiedostojen k„sittelyyn"
+
+msgid  "opens a file in the editor"
+msgstr "avaa tiedoston editoriin"
+
+msgid  "create a new editor window"
+msgstr "luo uuden editori ikkunan"
+
+msgid  "save the current editor to disk (if modified)"
+msgstr "tallentaa editorin sis„ll”n levylle (jos muutettu)"
+
+msgid  "save the current editor under a different name to disk"
+msgstr "tallentaa editorin tiedoston toiselle nimelle levyll„"
+
+msgid  "save all opened editors to disk (if modified)"
+msgstr "tallentaa kaikki avatut tiedostot levylle (jos muutettu)"
+
+msgid  "konfigure your print settings"
+msgstr ""
+
+msgid  "print the current editor file"
+msgstr ""
+
+msgid  "switch to DOS (call of %COMSPEC%, return with EXIT)"
+msgstr "siirtyy DOS:iin (kutsuu %COMSPEC%, paluu EXIT komennolla)"
+
+msgid  "switch to a shell (call of $SHELL or /bin/sh, return with exit)"
+msgstr ""
+
+msgid  "quits the IDE"
+msgstr "lopettaa IDE:en"
+
+msgid  "Submenu for things dealing with the editor"
+msgstr "Alivalikot editorin ominaisuuksiin"
+
+msgid  "undoes the last edit command"
+msgstr "peruu viimeisimman muutoskomennon"
+
+msgid  "undoes the last undo command"
+msgstr "peruuttaa edellisen peruutuksen"
+
+msgid  "move the selected text to the clipboard"
+msgstr "siirt„„ valitun tekstin leikep”yd„lle"
+
+msgid  "copy the selected text to the clipboard"
+msgstr "kopioi valitun tekstin leikep”yd„lle"
+
+msgid  "insert the selected text from the clipboard"
+msgstr "sijoittaa valitun tekstin leikep”yd„lt„"
+
+msgid  "shows the clipboard"
+msgstr "n„ytt„„ leikep”yd„n"
+
+msgid  "delete the selected text "
+msgstr "poistaa valitun tekstin"
+
+msgid  "Submenu for handling with rectangular blocks"
+msgstr ""
+
+msgid  "Start selecting rectangular block"
+msgstr ""
+
+msgid  "End selecting rectangular block"
+msgstr ""
+
+msgid  "Hide selected rectangular block"
+msgstr ""
+
+msgid  "Copy selected rectangular block"
+msgstr ""
+
+msgid  "Paste selected rectangular block"
+msgstr ""
+
+msgid  "Cut selected rectangular block"
+msgstr ""
+
+msgid  "Clear selected rectangular block"
+msgstr ""
+
+msgid  "Move selected rectangular block"
+msgstr ""
+
+msgid  "Copy the selected text to the Windows clipboard"
+msgstr ""
+
+msgid  "Paste text from the Windows clipboard"
+msgstr ""
+
+msgid  "Expand all tabs to spaces"
+msgstr "Laajentaa tabulaattorit v„lily”nneiksi"
+
+msgid  "Replace as much as possible spaces with tabs"
+msgstr "Korvaa mahdollisimman monen v„lily”nnin tabulaattoreilla"
+
+msgid  "Submenu for handling with macros"
+msgstr "Alivalikko makrojen k„sittelyyn"
+
+msgid  "Start the recording for a macro"
+msgstr "Aloittaa makron nauhoituksen"
+
+msgid  "Stop the recording for a macro"
+msgstr "Lopettaa makron nauhoituksen"
+
+msgid  "Run the recorded macro"
+msgstr "Ajaa nauhoitetun makron"
+
+msgid  "choose a named macro"
+msgstr ""
+
+msgid  "repeat the last macro"
+msgstr ""
+
+msgid  "write code for recorded macro"
+msgstr ""
+
+msgid  "Check the speed of the editor"
+msgstr ""
+
+msgid  "Submenu for searching/replacing text"
+msgstr "Alivalikko tekstin etsint„„n ja korvaukseen"
+
+msgid  "find a string in the current editor"
+msgstr "etsii merkkijonoa aktiivisesta tiedostosta"
+
+msgid  "find and replace a string in the current editor"
+msgstr "etsii ja korvaa merkkijonon aktiivisesta tiedostosta"
+
+msgid  "repeat the last find- or replace-operation"
+msgstr "toistaa viimeisimm„n etsi- tai korvaa toiminnon"
+
+msgid  "go to line number (after prompting)"
+msgstr "mene rivinumerolle (kysymyksen j„lkeen)"
+
+msgid  "Select a function from the current editor"
+msgstr "Valitse avoinna olevasta tiedostosta haluttu funktio."
+
+msgid  "select next message"
+msgstr "valitsee seuraavan ilmoituksen"
+
+msgid  "select previous message"
+msgstr "valitsee edellisen ilmoituksen"
+
+msgid  "Submenu for running your program"
+msgstr "Alivalikko ohjelman k„ynnist„miseen"
+
+msgid  "run the project-target (if executable after doing a make)"
+msgstr "k„ynnist„„ projektin ty”tiedoston (jos on k„ynnistett„v„„ "
+"'make'-komennon j„lkeen"
+
+msgid  "Step over function calls"
+msgstr "Hypp„„ funktio-kutsujen yli"
+
+msgid  "Step over function calls (No display swap)"
+msgstr ""
+
+msgid  "Execute one instruction"
+msgstr "Suorita vain yksi k„sky"
+
+msgid  "Execute one instruction (No display swap)"
+msgstr ""
+
+msgid  "Stops execution at the cursor"
+msgstr "Pys„yt„ suoritus kursorin kohdalle"
+
+msgid  "Stops execution at the cursor (No display swap)"
+msgstr ""
+
+msgid  "Reset the debugged program"
+msgstr "Uudelleen k„ynnist„ debuggeri-ohjelma"
+
+msgid  "Execute until end of function"
+msgstr ""
+
+msgid  "Enter the name of the 'main'-function"
+msgstr ""
+
+msgid  "enter commandline arguments for your program"
+msgstr "anna komentorivi parametrit ohjelmalle"
+
+msgid  "Submenu for compiling and/or creating your program/library"
+msgstr "Alivalikko ohjelman tai kirjaston k„„nt„mist„ tai luomista varten"
+
+msgid  "compile the current editor or the selected project-item"
+msgstr "k„„nt„„ aktiivisen tiedoston tai valitun projekti kohdan"
+
+msgid  "make the project (with checking auto-dependencies)"
+msgstr "projektille make (automaattinen riippuvaisuus tarkastus)"
+
+msgid  "link the project or create the library"
+msgstr "linkkaa projektin tai luo kirjaston"
+
+msgid  "build the project completely new"
+msgstr "rakentaa kaiken uudestaan"
+
+msgid  "Submenu for debugging your program"
+msgstr "Alivalikko ohjelman debuggaukseen"
+
+msgid  "Set/Clear a breakpoint at the current line"
+msgstr "Aseta/tyhjenn„ rivin keskeytyskohta"
+
+msgid  "Evaluate or modify an expression"
+msgstr "Laske tai muuta lauseketta"
+
+msgid  "Add an expression to the watching list"
+msgstr "Lis„„ lauseke tarkastelu listaan"
+
+msgid  "Open an inspector window for an expression"
+msgstr ""
+
+msgid  "Show/Modify the breakpoints"
+msgstr "N„yt„/Muuta keskeytyskohtia"
+
+msgid  "Show a disassembler window at the current execution point"
+msgstr ""
+
+msgid  "Shows a window with the function call stack"
+msgstr ""
+
+msgid  "Show a list with all functions"
+msgstr "N„yt„ kaikki funktiot"
+
+msgid  "Open a window with a memory dump"
+msgstr ""
+
+msgid  "Open a window showing the dump of the stack"
+msgstr ""
+
+msgid  "Submenu for handling your projects"
+msgstr "Alivalikko projektin k„sittelyyn"
+
+msgid  "open a project"
+msgstr "avaa projektin"
+
+msgid  "close the current project"
+msgstr "sulkee projektin"
+
+msgid  "add an item to the project"
+msgstr "lisaa alkion projektiin"
+
+msgid  "remove the selected item from the project"
+msgstr "poistaa valitun alkion projektista"
+
+msgid  "enter local commandline options for compiling this item"
+msgstr "anna paikalliset komentorivi parametrit t„m„n alkion k„„nt„miseen"
+
+msgid  "show the dependencies for the selected item"
+msgstr "n„yt„ valitun alkion riippuvaisuussuhteet"
+
+msgid  "change the name of the project-target"
+msgstr "muuta projektin kohteen nime„"
+
+msgid  "Set the primary file (only for GPC with '--automake'!!!)"
+msgstr "Aseta p„„tiedosto (vain GPC:lle '--automake'!!! p„„ll„"
+
+msgid  "remove the list of automaticaly generated dependencies"
+msgstr "poista automaattinen riippuvaisuussuhde lista"
+
+msgid  "remove all files, which can be rebuild with this project"
+msgstr "poista kaikki tiedotot, jotka voidaa uudelleen muodostaa"
+
+msgid  "Create for all project items the dependencies"
+msgstr ""
+
+msgid  "write a makefile for this project"
+msgstr "kirjoittaa 'make'-tiedoston projektista"
+
+msgid  "Submenu for most of the options of RHIDE"
+msgstr "Alivalikko suurimmalle osalle RHIDE:en vaihtoehdoille"
+
+msgid  "set various search paths for finding the files"
+msgstr "asettaa useita etsint„ polkuja tiedostojen etsimist„ varten"
+
+msgid  "set where to search for include files"
+msgstr "aseta include-tiedostojen hakupolku"
+
+msgid  "set where to search for libraries"
+msgstr "aseta library-tiedostojen hakupolku"
+
+msgid  "set where to search for object files"
+msgstr "aseta object-tiedostojen hakupolku"
+
+msgid  "set where to search for source files"
+msgstr "aseta l„hde-tiedostojen hakupolku"
+
+msgid  "Define, where your standard headers are"
+msgstr ""
+
+msgid  "customize various options for the C/C++-compiler"
+msgstr "r„„t„l”i C/C++ k„„nt„j„n optioita"
+
+msgid  "customize the generating of warnings"
+msgstr "r„„t„l”i virheilmoitusten tuottamisen"
+
+msgid  "customize, how to optimize the code"
+msgstr "r„„t„l”i koodin optimointi"
+
+msgid  "customize the generating of debugging information"
+msgstr "r„„t„l”i debuggin tietojen tuottaminen"
+
+msgid  "customize C-compiler specific flags"
+msgstr "r„„t„l”i C-k„„nt„j„n erityis asetukset"
+
+msgid  "customize C++-compiler specific flags"
+msgstr "r„„t„l”i C++-k„„nt„j„n erityis asetukset"
+
+msgid  "Flags only when compiling Pascal files"
+msgstr "Asetukset kun k„„nnet„„n Pascal-tiedostoja"
+
+msgid  "Flags only when compiling Fortran files"
+msgstr ""
+
+msgid  "Flags only when compiling ADA files"
+msgstr ""
+
+msgid  "set which libraries to be linked with the program"
+msgstr "valitsee mitk„ kirjastot tulee linkitt„„ mukaan ohjelmaan"
+
+msgid  "set additional flags to the linker"
+msgstr "asettaa ylim„„r„iset asetukset linkkerille"
+
+msgid  "set additional flags to the compiler (defines, ...)"
+msgstr "asettaa ylim„„r„iset asetukset k„„nt„j„lle (defines, ...)"
+
+msgid  "customize the IDE"
+msgstr "r„„t„l”i IDE"
+
+msgid  "customize the colors of the IDE"
+msgstr "r„„t„l”i IDE:n v„rit"
+
+msgid  "various options relating to the editor"
+msgstr ""
+
+msgid  "Set the editor options"
+msgstr ""
+
+msgid  "Customize your key bindings"
+msgstr ""
+
+msgid  "Define the meaning of the Alt-keys"
+msgstr ""
+
+msgid  "Restore default key bindings"
+msgstr ""
+
+msgid  "set basic options for the IDE"
+msgstr "aseta IDE:n perus asetuksen"
+
+msgid  "Set some options for the mouse"
+msgstr ""
+
+msgid  "edit the list of reserved words"
+msgstr "muuta varattujen sanojen listaa"
+
+msgid  "Edit the list of reserved words for Pascal files"
+msgstr "Korjaa Pascal-tiedostojen varattujen sanojen listaa"
+
+msgid  "edit the list of flags for the C-compiler"
+msgstr "muuta C-k„„nt„j„n asetus listaa"
+
+msgid  "edit the list of flags for the C++-compiler"
+msgstr "muuta C++-k„„nt„j„n asetus listaa"
+
+msgid  "Edit the list of pascal options"
+msgstr "Muuta pascal:in asetusarvoja"
+
+msgid  "Edit the list of fortran options"
+msgstr ""
+
+msgid  "Edit the list of ADA options"
+msgstr ""
+
+msgid  "edit the list of flags for warnings"
+msgstr "muuta varoitusten asetus listaa"
+
+msgid  "edit the list of flags for debugging"
+msgstr "muuta debuggerin asetus listaa"
+
+msgid  "edit the list of optimization flags"
+msgstr "muuta otimoinnin asetus listaa"
+
+msgid  "edit the list of user defined words (for syntaxhighlight)"
+msgstr "muuta varattujen sanojen listaa (syntaksin korostusta varten)"
+
+msgid  "Save all the options to a project file"
+msgstr ""
+
+msgid  "Load the options from a project file"
+msgstr ""
+
+msgid  "Submenu for dealing with windows"
+msgstr "Alivalikko ikkunoiden k„sittelyyn"
+
+msgid  "resize/move the current window"
+msgstr "muuta/siirr„ ikkunaa"
+
+msgid  "toggles between full size and previous size of the current window"
+msgstr "vaihta tilaa t„yden ikkunan ja edellisen koon v„lill„"
+
+msgid  "show all editor windows simultaniously"
+msgstr "n„yt„ kaikki ikkunat samanaikaisesti"
+
+msgid  "show from each editor the title"
+msgstr "n„yt„ kaikkien editori-tiedostojen otsikot"
+
+msgid  "switch to the next window on the desktop"
+msgstr "siirry seuraavaan ikkunaan ty”p”yd„ll„"
+
+msgid  "switch to the previous window on the desktop"
+msgstr "siirry edelliseen ikkunaan ty”p”yd„ll„"
+
+msgid  "close the current window"
+msgstr "sulkee ikkunan"
+
+msgid  "show a list of all windows on the desktop"
+msgstr "n„ytt„„ listan kaikista ikkunoista ty”p”yd„ll„"
+
+msgid  "show the project window"
+msgstr "n„ytt„„ projekti ikkunan"
+
+msgid  "Opens the window with watches"
+msgstr ""
+
+msgid  "show the message window"
+msgstr ""
+
+msgid  "show the user screen"
+msgstr "n„ytt„„ ohjelman suoritus ikkunan"
+
+msgid  "Several menu entries for getting help"
+msgstr "Muutama valinta avun saamiseksi"
+
+msgid  "opens the Info Viewer"
+msgstr "avaa Info-ohjelman"
+
+msgid  "The main index of the RHIDE help"
+msgstr "RHIDE:n avun p„„hakemisto"
+
+msgid  "Submenu for syntax help"
+msgstr ""
+
+msgid  "Help for the function under the cursor"
+msgstr "Apu funktiolle, joka on kursorin kohdalla"
+
+msgid  "Files to be searched for syntax help"
+msgstr ""
+
+msgid  "Options for the syntax help"
+msgstr ""
+
+msgid  "Get a list with all available syntax help topics"
+msgstr ""
+
+msgid  "The main index of the libc reference"
+msgstr "Kirjaston avun hakemisto"
+
+msgid  "Get help about using the helpsystem"
+msgstr "Hae apua k„ytt„en avustusj„rjestelm„„"
+
+msgid  "Shows the last opened help"
+msgstr "N„ytt„„ viimeisimm„n avatun avun"
+
+msgid  "How many closed windows should I remember"
+msgstr ""
+
+msgid  "%s has been modified! Reload it?"
+msgstr ""
+
+msgid  "Name of the main target"
+msgstr "P„„kohteen nimi"
+
+msgid  "Goto the line"
+msgstr "Mene riville"
+
+msgid  "line ~n~umber"
+msgstr "rivi ~n~umero"
+
+msgid  "About RHIDE"
+msgstr "Asiaa RHIDE:st„"
+
+msgid  "RHIDE is an Integrated Development Environment"
+msgstr "RHIDE on integroitu kehitys ymp„rist”"
+
+msgid  "for developing DJGPP apps"
+msgstr "DJGPP sovellutusten kehitykseen"
+
+msgid  "for developing Linux apps"
+msgstr ""
+
+msgid  "Copyright (C) by Robert H”hne"
+msgstr ""
+
+msgid  "Language: "
+msgstr ""
+
+msgid  "English"
+msgstr ""
+
+msgid  "Translated by: "
+msgstr ""
+
+msgid  "Nobody"
+msgstr ""
+
+msgid  "last updated: "
+msgstr ""
+
+msgid  "1998-11-29"
+msgstr ""
+
+msgid  "~O~K"
+msgstr "~O~K"
+
+msgid  "Please wait"
+msgstr ""
+
+msgid  "Creating the Bug report"
+msgstr ""
+
+msgid  "Name of the main function"
+msgstr ""
+
+msgid  "Expression to inspect"
+msgstr ""
+
+msgid  "~E~xpression"
+msgstr "Laus~e~ke"
+
+msgid  "Regular expression to list functions"
+msgstr "T„sm„llinen lauseke listataksesi funktiot"
+
+msgid  "List of functions"
+msgstr "Funktio lista"
+
+msgid  "WindowList"
+msgstr "Ikkuna lista"
+
+msgid  "Standard Include Directories"
+msgstr ""
+
+msgid  "Include Directories"
+msgstr "Include hakemistot"
+
+msgid  "Library Directories"
+msgstr "Library hakemistot"
+
+msgid  "Object Directories"
+msgstr "Object hakemistot"
+
+msgid  "Source Directories"
+msgstr "L„hde hakemistot"
+
+msgid  "INFO files for syntaxhelp"
+msgstr ""
+
+msgid  "Program arguments"
+msgstr "Ohjelman parametrit"
+
+msgid  "Select a project"
+msgstr "Valitse projekti"
+
+msgid  "You can give here only a valid filename for a Pascal source file"
+msgstr "Voit antaa t„ss„ vain Pascal-kielisen tiedostonimen"
+
+msgid  "or a TeX source file"
+msgstr ""
+
+msgid  "usage: %s [options] [project-file] [edit-file]\n"
+msgstr "k„ytt”:%s [optiot] [projekti tiedosto] [editoitava tiedosto]\n"
+
+msgid  "options:    -d[actdf]\n"
+msgstr "parametrit:     -d[actdf]\n"
+
+msgid  "            -c : show filename exactly (no case conversion)\n"
+msgstr "            -c : tiedostonimi tarkasti (iso/pieni kirjain eri "
+"asia)\n"
+
+msgid  "            -y : force to use long filenames (Windows 95)\n"
+msgstr "            -y : pakko k„ytt„„ pitki„ tiedostonimi„ (Windows 95)\n"
+
+msgid  "            -n : do not use long filenames (Windows 95)\n"
+msgstr "            -n : ei k„ytet„ pitki„ tiedostonimi„ (Windows 95)\n"
+
+msgid  "            -b : use BIOS calls for toggle the blinkstate\n"
+msgstr "            -b : k„yt„ BIOS kutsuja vilkutus tilan muutokseen\n"
+
+msgid  "            -p : do not convert the numpad keys\n"
+msgstr "            -p : ei muunneta numeron„pp„imist”n n„pp„imi„\n"
+
+msgid  "            -G num : Use methode <num> for screen swapping\n"
+msgstr ""
+
+msgid  "            -K : Use the BIOS for keyboard input\n"
+msgstr ""
+
+msgid  "            -M : Do not install the mouse handler\n"
+msgstr ""
+
+msgid  "            -S : use slower (safer) screen output\n"
+msgstr ""
+
+msgid  "            -K : Do not patch the keytable\n"
+msgstr ""
+
+msgid  "            -H : Do not install console switch handler\n"
+msgstr ""
+
+msgid  "            -L LANGUAGE : use language LANGUAGE\n"
+msgstr "            -L LANGUAGE : k„yt„ kielt„ LANGUAGE\n"
+
+msgid  "            -h : show this help\n"
+msgstr "            -h : n„yt„ t„m„ avustus\n"
+
+msgid  "            -k KEY_FILE : use KEY_FILE for key bindings\n"
+msgstr "            -k KEY_FILE : k„yt„ KEY_FILE:„ n„pp„imist”n "
+"m„„rittelyyn\n"
+
+msgid  "            -E : Output all env. variables and exit\n"
+msgstr ""
+
+msgid  "            -C : Disable SIGINT handling\n"
+msgstr ""
+
+msgid  "            -T : Disable the DOS-box title feature\n"
+msgstr ""
+
+msgid  "            -P : don`t remove temp files when exiting\n"
+msgstr ""
+
+msgid  "using %s as temp directory\n"
+msgstr "k„ytet„„n %s tilap„isten tiedostojen hakemistona\n"
+
+msgid  "warning: temporary file %s deleted\n"
+msgstr ""
+
+msgid  "This is %s. Copyright (c) 1996-2001 by Robert H”hne\n"
+msgstr ""
+
+msgid  "Do you really want to interrupt RHIDE?"
+msgstr ""
+
+msgid  "RHIDE has detected, that the environment variable 'DJDIR' has not "
+"been set. This means, you haven't installed DJGPP correct. Please read the "
+"file README.1ST from the DJGPP distribution how to install DJGPP. If you "
+"continue now, you will get probably many errors."
+msgstr ""
+
+msgid  "Invalid project-file %s(%s)"
+msgstr "Kelvoton projekti-tiedosto %s(%s)"
+
+msgid  "This project was created with a newer RHIDE version and could not be "
+"used."
+msgstr ""
+
+msgid  "~S~yntax help"
+msgstr "~S~yntaksin avustus"
+
+msgid  "~F~iles to search"
+msgstr ""
+
+msgid  "~O~ptions for searching"
+msgstr ""
+
+msgid  "~H~elp"
+msgstr "~A~pua"
+
+msgid  "RHIDE Help ~i~ndex"
+msgstr "RHIDE Avun hakem~i~sto"
+
+msgid  "Index for s~y~ntax help"
+msgstr ""
+
+msgid  "lib~c~ reference"
+msgstr "~k~irjaston avustus"
+
+msgid  "Help ~a~bout help"
+msgstr "Avustus ~a~vusta"
+
+msgid  "~L~ast help"
+msgstr "viimeisin"
+
+msgid  "~F~ile"
+msgstr "~T~iedosto"
+
+msgid  "~O~pen"
+msgstr "~A~vaa"
+
+msgid  "~N~ew"
+msgstr "~U~usi"
+
+msgid  "~S~ave"
+msgstr "~T~allennna"
+
+msgid  "S~a~ve as..."
+msgstr "Tallenna n~i~mell„..."
+
+msgid  "Save a~l~l"
+msgstr "Tallenna ~k~aikki"
+
+msgid  "~P~rint"
+msgstr ""
+
+msgid  "Printer set~u~p"
+msgstr ""
+
+msgid  "~D~OS shell"
+msgstr "~D~ossi"
+
+msgid  "S~h~ell"
+msgstr ""
+
+msgid  "E~x~it"
+msgstr "~P~oistu"
+
+msgid  "~M~acro"
+msgstr "~M~akro"
+
+msgid  "~R~ecord"
+msgstr "~N~auhoita"
+
+msgid  "~S~top"
+msgstr "~S~eis"
+
+msgid  "~P~lay"
+msgstr "~A~ja"
+
+msgid  "~C~hoose"
+msgstr ""
+
+msgid  "R~e~peat"
+msgstr ""
+
+msgid  "~G~enerate Code"
+msgstr ""
+
+msgid  "Recta~n~gle"
+msgstr ""
+
+msgid  "~S~tart"
+msgstr "~A~loita"
+
+msgid  "~E~nd"
+msgstr "~L~opeta"
+
+msgid  "~H~ide"
+msgstr "~P~iilota"
+
+msgid  "~C~opy"
+msgstr "~K~opioi"
+
+msgid  "~P~aste"
+msgstr "L~i~it„"
+
+msgid  "Cu~t~"
+msgstr "~L~eikkaa"
+
+msgid  "C~l~ear"
+msgstr "~T~yhjenn„"
+
+msgid  "~M~ove"
+msgstr "Sii~r~r„"
+
+msgid  "~E~dit"
+msgstr "~M~uuta"
+
+msgid  "~U~ndo"
+msgstr "Per~u~uta"
+
+msgid  "~R~edo"
+msgstr "Pe~r~uuta peruutus"
+
+msgid  "~S~how clipboard"
+msgstr "~N~„yt„ leikep”yt„"
+
+msgid  "Cop~y~ to Windows Clipboard"
+msgstr ""
+
+msgid  "Paste from ~W~indows Clipboard"
+msgstr ""
+
+msgid  "E~x~pand all tabs"
+msgstr "Laajenna ta~b~uloinnit"
+
+msgid  "C~o~mpact text"
+msgstr "Tii~v~ist„ teksti"
+
+msgid  "Profile Editor"
+msgstr ""
+
+msgid  "~S~earch"
+msgstr "~E~tsi"
+
+msgid  "~F~ind..."
+msgstr "E~t~si"
+
+msgid  "~R~eplace..."
+msgstr "~K~orvaa"
+
+msgid  "~S~earch again"
+msgstr "Etsi ~u~udestaan"
+
+msgid  "~G~oto Line..."
+msgstr "~M~ene riville..."
+
+msgid  "~J~ump to function"
+msgstr "~H~ypp„„ funktioon"
+
+msgid  "~N~ext message"
+msgstr "~S~euraava viesti"
+
+msgid  "Previ~o~us message"
+msgstr "~E~dellinen viesti"
+
+msgid  "~R~un"
+msgstr "A~j~a"
+
+msgid  "~S~tep over"
+msgstr "~H~ypp„„ yli"
+
+msgid  "Step over (No display swap)"
+msgstr ""
+
+msgid  "~T~race into"
+msgstr "~J~„ljit„"
+
+msgid  "Trace into (No display swap)"
+msgstr ""
+
+msgid  "~G~o to cursor"
+msgstr "Mene k~u~rsorille asti"
+
+msgid  "Go to cursor (No display swap)"
+msgstr ""
+
+msgid  "~U~ntil return"
+msgstr ""
+
+msgid  "~P~rogram reset"
+msgstr "~O~hjelman uudelleen k„ynnistys"
+
+msgid  "~M~ain function"
+msgstr ""
+
+msgid  "~A~rguments ..."
+msgstr "Komentorivi ~p~arametrit"
+
+msgid  "~C~ompile"
+msgstr "~K~„„nn„"
+
+msgid  "~M~ake"
+msgstr "~T~ee"
+
+msgid  "~L~ink"
+msgstr "~L~inkkaa"
+
+msgid  "~B~uild all"
+msgstr "Tee k~a~ikki"
+
+msgid  "~P~roject"
+msgstr "~P~rojekti"
+
+msgid  "Open ~p~roject"
+msgstr "~A~vaa projekti"
+
+msgid  "~C~lose project"
+msgstr "~S~ulje projekti"
+
+msgid  "~A~dd item"
+msgstr "~L~is„„ alkio"
+
+msgid  "D~e~lete item"
+msgstr "~P~oista alkio"
+
+msgid  "~L~ocal options"
+msgstr "Pai~k~alliset optiot"
+
+msgid  "~I~ncludes"
+msgstr "~I~ncludes"
+
+msgid  "main target~n~ame"
+msgstr "P„„kohde ~n~imi"
+
+msgid  "Primary ~f~ile"
+msgstr "P„„~k~ohde tiedosto"
+
+msgid  "Clea~r~ dependencies"
+msgstr "T~y~hjenn„ riippuvuussuhteet"
+
+msgid  "~D~elete rebuildable files"
+msgstr "P~o~ista uudelleen muodostettavat tiedostot"
+
+msgid  "Crea~t~e dependencies"
+msgstr ""
+
+msgid  "~W~rite Makefile"
+msgstr "Kirjoita ~M~AKE-tiedosto"
+
+msgid  "~D~irectories"
+msgstr "~H~akemistot"
+
+msgid  "~I~nclude"
+msgstr "~I~nclude"
+
+msgid  "~L~ibraries"
+msgstr "~K~irjastot"
+
+msgid  "~O~bject"
+msgstr "~O~bject"
+
+msgid  "~S~ources"
+msgstr "~S~orsat"
+
+msgid  "S~t~andard headers"
+msgstr ""
+
+msgid  "~C~ompilers"
+msgstr "~K~„„nt„j„t"
+
+msgid  "~W~arnings"
+msgstr "~V~aroitukset"
+
+msgid  "~O~ptimizations"
+msgstr "~O~ptimointi"
+
+msgid  "De~b~ugging"
+msgstr "De~b~uggaus"
+
+msgid  "~C~-Flags"
+msgstr "~C~:n asetukset"
+
+msgid  "C~X~X-Flags"
+msgstr "C~X~X:an asetukset"
+
+msgid  "P~a~scal-Flags"
+msgstr "~P~ascal asetukset"
+
+msgid  "~F~ortran-Flags"
+msgstr ""
+
+msgid  "A~d~a-Flags"
+msgstr ""
+
+msgid  "~E~ditor"
+msgstr ""
+
+msgid  "~E~ditor options"
+msgstr ""
+
+msgid  "E~d~it key assignment"
+msgstr ""
+
+msgid  "~A~lt-Keys settings"
+msgstr ""
+
+msgid  "~R~estore default editor keys"
+msgstr ""
+
+msgid  "~E~nvironment"
+msgstr "~Y~mp„rist”"
+
+msgid  "~C~olors"
+msgstr "~V~„rit"
+
+msgid  "~P~references"
+msgstr "~A~setukset"
+
+msgid  "~M~ouse options"
+msgstr ""
+
+msgid  "~R~eserved words"
+msgstr "Va~r~atut sanat"
+
+msgid  "P~a~scal Reserved words"
+msgstr "~P~ascal:in varatut sanat"
+
+msgid  "C-~F~lags"
+msgstr "~C~:n asetukset"
+
+msgid  "Fortra~n~-Flags"
+msgstr ""
+
+msgid  "Ada-~F~lags"
+msgstr ""
+
+msgid  "~W~arning-Flags"
+msgstr "~V~aroitus asetukset"
+
+msgid  "~D~ebugging-Flags"
+msgstr "~D~ebugging asetukset"
+
+msgid  "~O~ptimization-Flags"
+msgstr "~O~ptimointi asetukset"
+
+msgid  "~U~ser words"
+msgstr "~K~„ytt„j„n sanat"
+
+msgid  "~O~ptions"
+msgstr "A~s~etus"
+
+msgid  "L~i~nker Options"
+msgstr "L~i~nkkerin asetukset"
+
+msgid  "Compiler ~O~ptions"
+msgstr "K~„~„nt„j„n asetukset"
+
+msgid  "~S~ave options"
+msgstr "~T~allenna asetukset"
+
+msgid  "Loa~d~ options"
+msgstr ""
+
+msgid  "~W~indows"
+msgstr "~I~kkunat"
+
+msgid  "~S~ize/move"
+msgstr "~K~oko/Siirr„"
+
+msgid  "~Z~oom"
+msgstr "S~u~urenna"
+
+msgid  "~T~ile"
+msgstr "J„rjest„ ~v~ierekk„in"
+
+msgid  "C~a~scade"
+msgstr "J„rjest„ l~o~mittain"
+
+msgid  "~N~ext"
+msgstr "Se~u~raava"
+
+msgid  "~P~revious"
+msgstr "~E~dellinen"
+
+msgid  "~C~lose"
+msgstr "~S~ulje"
+
+msgid  "~L~ist"
+msgstr "~L~istaa"
+
+msgid  "Pro~j~ect"
+msgstr "~P~rojekti"
+
+msgid  "~W~atches"
+msgstr ""
+
+msgid  "~M~essages"
+msgstr ""
+
+msgid  "~U~serScreen"
+msgstr "K~„~ytt„j„n n„ytt”"
+
+msgid  "~ð~"
+msgstr "~ð~"
+
+msgid  "about RH~I~DE"
+msgstr "Asiaa RH~I~DE:st„"
+
+msgid  "~s~mall bug report"
+msgstr ""
+
+msgid  "~B~ug report"
+msgstr ""
+
+msgid  "~F~SDB"
+msgstr "~F~SDB"
+
+msgid  "~G~REP ..."
+msgstr "~G~REP ..."
+
+msgid  "G~D~B"
+msgstr "G~D~B"
+
+msgid  "Refresh desk~t~op"
+msgstr "~P~„ivit„ ty”p„yt„"
+
+msgid  "~C~alculator"
+msgstr ""
+
+msgid  "~P~uzzle"
+msgstr ""
+
+msgid  "Ca~l~endar"
+msgstr ""
+
+msgid  "~A~SCII table"
+msgstr ""
+
+msgid  "~D~ebug"
+msgstr "~D~ebug"
+
+msgid  "~S~et/Reset Breakpoint"
+msgstr "~A~seta/Nollaa keskeytyskohta"
+
+msgid  "~E~valuate/Modify"
+msgstr "~L~aske/Muuta"
+
+msgid  "~W~atch an expression"
+msgstr "~T~arkkaile lauseketta"
+
+msgid  "~I~nspect an expression"
+msgstr ""
+
+msgid  "~B~reakpoints"
+msgstr "K~e~skeytykohdat"
+
+msgid  "~D~isassembler window"
+msgstr ""
+
+msgid  "~C~all stack"
+msgstr ""
+
+msgid  "List of ~F~unctions"
+msgstr "~F~unktioiden lista"
+
+msgid  "D~a~ta window"
+msgstr ""
+
+msgid  "S~t~ack window"
+msgstr ""
+
+msgid  "Message Window"
+msgstr "Viesti ikkuna"
+
+msgid  "Optimization Flags"
+msgstr "Optimointi asetukset"
+
+msgid  "Warning Flags"
+msgstr "Varoitus asetukset"
+
+msgid  "Debugging Flags"
+msgstr "Bebuggaus asetukset"
+
+msgid  "C++ Flags"
+msgstr "C++ asetukset"
+
+msgid  "C Flags"
+msgstr "C asetukset"
+
+msgid  "Pascal Flags"
+msgstr "Pascal asetukset"
+
+msgid  "Fortran Flags"
+msgstr ""
+
+msgid  "Ada Flags"
+msgstr ""
+
+msgid  "Libraries"
+msgstr "~K~irjastot"
+
+msgid  "Use ~s~tandard libraries"
+msgstr "K„yt„ ~s~tandardi kirjastoja"
+
+msgid  "link for ~p~rofiling"
+msgstr "Linkkaa ~p~rofilointia varten"
+
+msgid  "Additional linker options"
+msgstr "Ylim„„r„iset linkkaus asetukset"
+
+msgid  "Additional compiler options"
+msgstr "Ylim„„r„iset k„„nt„j„ asetukset"
+
+msgid  "Environment options"
+msgstr "Ymp„rist”n asetukset"
+
+msgid  "~R~emember old messages"
+msgstr ""
+
+msgid  "~D~on`t show exit code"
+msgstr ""
+
+msgid  "~C~lean files recursive"
+msgstr ""
+
+msgid  "all dependencies in ~m~akefile"
+msgstr "kaikki riippuvuussuhteet make-tiedostossa"
+
+msgid  "create ~b~ackupfiles"
+msgstr "luodaan ~v~armuuskopiot"
+
+msgid  "syntax ~h~ighlighting"
+msgstr "syntaksin ~k~orostus"
+
+msgid  "U~s~e dual display"
+msgstr ""
+
+msgid  "redirect 'stde~r~r'"
+msgstr "ohjaa 'stde~r~r':in"
+
+msgid  "redirect 'stdou~t~'"
+msgstr "ohjeaa 'stdou~t~':in"
+
+msgid  "show ~p~rocess information"
+msgstr "n„yt„ ~k~„sittely tiedot"
+
+msgid  "show free memor~y~"
+msgstr "n„yt„ vapaa ~m~uisti"
+
+msgid  "No file cachin~g~"
+msgstr "Ei tietoja v„limuistissa"
+
+msgid  "1~6~ background colors"
+msgstr "1~6~ tausta v„ri„"
+
+msgid  "Show G~D~B commands"
+msgstr "N„yt„ G~D~B komennot"
+
+msgid  "~U~se no shadows"
+msgstr ""
+
+msgid  "Save te~x~t palette"
+msgstr ""
+
+msgid  "Save pro~j~ect only when closing"
+msgstr ""
+
+msgid  "Sho~w~ user screen after exit"
+msgstr ""
+
+msgid  "Only #~i~nclude \"...\" as dependencies"
+msgstr ""
+
+msgid  "Directories in project items"
+msgstr ""
+
+msgid  "Show Disassemb~l~er Window when needed"
+msgstr ""
+
+msgid  "Use RCS"
+msgstr ""
+
+msgid  "Use ~F~PC pascal compiler"
+msgstr ""
+
+msgid  "O~p~tions"
+msgstr "A~s~etus"
+
+msgid  "other"
+msgstr "muut"
+
+msgid  "~S~creen mode"
+msgstr "~N~„yt”n asetus"
+
+msgid  "Closed ~W~indows"
+msgstr ""
+
+msgid  "Cancel"
+msgstr "~P~eruutus"
+
+msgid  "Mor~e~ options"
+msgstr ""
+
+msgid  "This video mode (0x%03x) is not supported by the Turbo Vision "
+"library"
+msgstr "T„m„ video moodi (0x%03x) ei ole tuettu Turbo Vision kirjastossa"
+
+msgid  "~A~dd"
+msgstr "~L~is„„"
+
+msgid  "~D~elete"
+msgstr "P~o~ista"
+
+msgid  "Defa~u~lt"
+msgstr ""
+
+msgid  "New value"
+msgstr "~U~usi arvo"
+
+msgid  "~V~alue"
+msgstr "A~r~vo"
+
+msgid  "Read words from file"
+msgstr "Lue sanat tiedostosta"
+
+msgid  "Couldn't open file %s"
+msgstr "Ei voi avata tiedostoa %s"
+
+msgid  "Reserved words"
+msgstr "Va~r~atut sanat"
+
+msgid  "GPC Reserved words"
+msgstr "GPC Varatut sanat"
+
+msgid  "FPC Reserved words"
+msgstr ""
+
+msgid  "User Reserved words"
+msgstr "K„ytt„j„n varatut sanat"
+
+msgid  "local options for project-item"
+msgstr "projektin paikalliset asetukset"
+
+msgid  "local ~c~ommandline options"
+msgstr "paikalliset komentorivi asetukset"
+
+msgid  "~N~ame of the output file"
+msgstr "Tulostustiedoston ~n~imi"
+
+msgid  "Auto"
+msgstr "Automaattinen"
+
+msgid  "User"
+msgstr "K„ytt„j„"
+
+msgid  "None"
+msgstr "Ei mit„„n"
+
+msgid  "GNU C compiler"
+msgstr "GNU C k„„nt„j„"
+
+msgid  "GNU C++ compiler"
+msgstr "GNU C++ k„„nt„j„"
+
+msgid  "GNU assembler"
+msgstr "GNU assembleri"
+
+msgid  "GNU Pascal compiler"
+msgstr "GNU Pascal k„„nt„j„"
+
+msgid  "GNU Fortran compiler"
+msgstr ""
+
+msgid  "Free Pascal compiler"
+msgstr ""
+
+msgid  "Comp~i~ler type"
+msgstr "K„„nt„j„n ~t~yyppi"
+
+msgid  "Com~p~iler"
+msgstr "~K~„„nt„j„"
+
+msgid  "builtin C"
+msgstr "tehd„„n C"
+
+msgid  "builtin assembler"
+msgstr "tehd„„n assembleri"
+
+msgid  "builtin linker"
+msgstr "tehd„„n linkkaus"
+
+msgid  "return value"
+msgstr "paluu arvo"
+
+msgid  "builtin FPC"
+msgstr ""
+
+msgid  "~E~rror checking"
+msgstr "~V~irhe tarkistus"
+
+msgid  "E~r~ror program"
+msgstr "Virhe ~o~hjelmassa"
+
+msgid  "exclude from link"
+msgstr "poistettu linkkauksesta"
+
+msgid  "rebuild seldom"
+msgstr ""
+
+msgid  "o~t~her options"
+msgstr "m~u~ut asetukset"
+
+msgid  "The desktop file cannot be used, because of a new format"
+msgstr "Ty”p”yd„n asetustiedostoa ei voida k„ytt„„ (uusi formaatti)"
+
+msgid  "The desktop file cannot be used, because it was created by a newer "
+"version of RHIDE"
+msgstr "Ty”p”yd„n tiedostoa ei voi k„ytt„„, koska se on tehty uudemmalla "
+"RHIDE:n versiolla"
+
+msgid  "Save options to a project"
+msgstr ""
+
+msgid  "Read options from project"
+msgstr ""
+
+msgid  "Couldn't open %s"
+msgstr "Ei voida avata %s"
+
+msgid  "changing cwd to %s\n"
+msgstr "muutetaan cwd -> %s\n"
+
+msgid  "temporary opening project %s\n"
+msgstr "v„liaikaisesti avataan projekti %s\n"
+
+msgid  "closing temporary opened project project %s\n"
+msgstr "suljetaan v„liaikaisesti avattu projekti %s\n"
+
+msgid  "finaly opening project %s\n"
+msgstr "lopuksi avataan projekti %s\n"
+
+msgid  "Project Window"
+msgstr "Projekti Ikkuna"
+
+msgid  "Add Item"
+msgstr "Lis„„ alkio"
+
+msgid  "The item '%s' is already in your project"
+msgstr "Alkio '%s' on jo projektissa"
+
+msgid  "Remove '%s' from the project"
+msgstr "Poistetaan '%s' projektista"
+
+msgid  "Include files for "
+msgstr "Include tiedostot tiedostolle  "
+
+msgid  "clearing dependencies for %s\n"
+msgstr "tyhjennet„„n riippuvuussuhteet %s\n"
+
+msgid  "~F1~ Help"
+msgstr "~F1~ Apua"
+
+msgid  "~F2~ Save"
+msgstr "~F2~ Tallenna"
+
+msgid  "~F3~ Open"
+msgstr "~F3~ Avaa"
+
+msgid  "~F5~ Zoom"
+msgstr "~F5~ Suurenna"
+
+msgid  "~F6~ Next"
+msgstr "~F6~ Seuraava"
+
+msgid  "~F10~ Menu"
+msgstr "~F10~ Valikko "
+
+msgid  "~Alt+X~ Quit"
+msgstr "~Alt+X~ Poistu"
+
+msgid  "~Ins~ Add"
+msgstr "~Ins~ Lis„„"
+
+msgid  "~Del~ Delete"
+msgstr "~Del~ Poista"
+
+msgid  "~^O~ Local"
+msgstr "~^O~ Paikallinen"
+
+msgid  "~^I~ Includes"
+msgstr "~^I~ Includes"
+
+msgid  "~Alt+F9~ Compile"
+msgstr "~Alt+F9~ K„„nn„"
+
+msgid  "~Enter~ Jump to source"
+msgstr "~Enter~ siirryt„„n kohtaan"
+
+msgid  "~Ctrl+Del~ Delete all"
+msgstr ""
+
+msgid  "~Enter~ Select"
+msgstr "~Enter~ valitse"
+
+msgid  "~Del~ Close"
+msgstr "~Del~ Sulje"
+
+msgid  "~F1~ Help on InfoViewer"
+msgstr "~F1~ Apua InfoViewer"
+
+msgid  "~Alt+F1~ last help"
+msgstr "~Alt+F1~ viimeisin"
+
+msgid  "~Alt+F10~ local menu"
+msgstr "~Alt+F10~ paikallinen valikko"
+
+msgid  "~^F1~ Bookmarks"
+msgstr ""
+
+msgid  "~Ctrl+F1~ Select from a list"
+msgstr "~Ctrl+F1~ Valitse listasta"
+
+msgid  "~Enter~ Edit"
+msgstr "~Enter~ Muuta"
+
+msgid  "~Esc~ Cancel"
+msgstr "~Esc~ Peruuta"
+
+msgid  "~Space~ select"
+msgstr "~Space~ valitse"
+
+msgid  "~^G~ Goto"
+msgstr ""
+
+msgid  "~Alt+F3~ Close"
+msgstr ""
+
+msgid  "~Enter~ Modify register"
+msgstr ""
+
+msgid  "Search for file '%s'\n"
+msgstr "Etsit„„n tiedostosta '%s'\n"
+
+msgid  "found '%s'\n"
+msgstr "l”ytyi '%s'\n"
+
+msgid  "not found: take '%s'\n"
+msgstr "ei l”ytynyt: ota '%s'\n"
+
+msgid  "clearing the FindCache\n"
+msgstr "tyhjennetaan etsint„ v„limuisti\n"
+
+msgid  "found '%s' in FindCache\n"
+msgstr "l”ytyi '%s' etsint„ v„limuistista\n"
+
+msgid  "found '%s' in current directory\n"
+msgstr "l”ytyi '%s' nykyisesta hakemistosta\n"
+
+msgid  "found '%s' using the search directory '%s'\n"
+msgstr "l”ytyi '%s' etsint„ hakemistosta\n"
+
+msgid  "Open the file %s"
+msgstr ""
+
+msgid  "An error has occoured when running the program "
+msgstr "Virhe on ilmaantunut ohjelmaa ajettaessa "
+
+msgid  "The error was : "
+msgstr "Virhe oli : "
+
+msgid  "Messages to stdout:"
+msgstr ""
+
+msgid  "Messages to stderr:"
+msgstr ""
+
+msgid  "Control-Break Pressed"
+msgstr "Control-Break painettu"
+
+msgid  "Compiling: "
+msgstr "K„„nnet„„n: "
+
+msgid  "Creating: "
+msgstr "Luodaan: "
+
+msgid  "Don't know how to build %s from %s"
+msgstr "En tied„ kuinka %s tehd„„n %s:st„ "
+
+msgid  "no errors"
+msgstr "Ei virheit„"
+
+msgid  "There were some errors"
+msgstr ""
+
+msgid  "Select a topic"
+msgstr ""
+
+msgid  "Error creating the indices for %s (or nothing found). Remove that "
+"file from the list?"
+msgstr ""
+
+msgid  "No INFO files for syntax help defined"
+msgstr ""
+
+msgid  "Couldn't find any matching help"
+msgstr ""
+
+msgid  "Options for syntax help"
+msgstr ""
+
+msgid  "E~x~act"
+msgstr ""
+
+msgid  "~S~ubstring"
+msgstr ""
+
+msgid  "~F~uzzy"
+msgstr ""
+
+msgid  "Search ~m~ethode"
+msgstr ""
+
+msgid  "~C~ase sensitive"
+msgstr "Erottele ~p~ienet/suuret merkit"
+
+msgid  "Search o~p~tions"
+msgstr ""
+
+msgid  "Fu~z~zy value"
+msgstr ""
+
+msgid  "Calculator"
+msgstr ""
+
+msgid  "~R~esult"
+msgstr "~T~ulos"
+
+msgid  "E~v~al"
+msgstr "~L~aske"
+
+msgid  "Error in expression (%d)"
+msgstr ""
+
+msgid  "RHIDE has detected that your DJGPP environment variable was not set. "
+"It is set now automatically. If RHIDE did the right choice, please modify "
+"your autoexec.bat by adding the following line to fix this problem:\n"
+"\n"
+"SET DJGPP=%s\n"
+msgstr ""
+
+msgid  "RHIDE has detected, that the environment variable DJDIR has not been "
+"set (or not correct). This is a fatal mistake. For information about fixing "
+"this, please read the File README.1ST from the DJGPP distribution. (about "
+"setting the DJGPP environment variable!!!) Should I continue?"
+msgstr ""
+
+msgid  "RHIDE could not access the direcory '%s', where it searches for "
+"language specific strings. Please read the file 'RHIDE.BIN' how to install "
+"RHIDE correct. Should I continue?"
+msgstr ""
+
+msgid  "RHIDE has detected, that you are running on a System where long "
+"filenames might be supported and you have installed the C++ compiler. Are "
+"you sure, you have read the DJGPP FAQ and the installing instructions for "
+"gcc when running under such a system? (like Windows 95/Windows NT) There "
+"might be a problem with the standard C++ libraries and the standard C++ "
+"include files because of a LFN-conflict. Should I continue?"
+msgstr ""
+
+msgid  "Converting Projectfile : %s\n"
+msgstr ""
+
+msgid  "Error"
+msgstr "Virhe"
+
+msgid  "Pocket Calculator"
+msgstr ""
+
+msgid  "type not registered: %s\n"
+msgstr "tyyppi ei rekister”iity: %s\n"
+
+msgid  "Change Directory"
+msgstr "Muuta hakemistoa"
+
+msgid  "Directory ~n~ame"
+msgstr "Hakemiston ~n~imi"
+
+msgid  "Directory ~t~ree"
+msgstr "Hakemisto ~p~uu"
+
+msgid  "~C~hdir"
+msgstr "Muuta ~h~akemisto"
+
+msgid  "~R~evert"
+msgstr "~P~alaa"
+
+msgid  "Help"
+msgstr "~A~pua"
+
+msgid  "Drives"
+msgstr "Asemat"
+
+msgid  "Invalid directory"
+msgstr "Hakemisto v„„r„"
+
+msgid  "Colors"
+msgstr "V„rit"
+
+msgid  "~G~roup"
+msgstr "~R~yhm„"
+
+msgid  "~I~tem"
+msgstr "~K~ohta"
+
+msgid  "~F~oreground"
+msgstr "~E~dusta"
+
+msgid  "~B~ackground"
+msgstr "~T~austa"
+
+msgid  "Text "
+msgstr "Teksti"
+
+msgid  "Color"
+msgstr "V„ri"
+
+msgid  "~T~ry"
+msgstr ""
+
+msgid  "Clipboard"
+msgstr "Leikep”yt„"
+
+msgid  "~F~iles"
+msgstr "~T~iedostot"
+
+msgid  "~S~elect"
+msgstr ""
+
+msgid  "~R~eplace"
+msgstr "Korvaa"
+
+msgid  "~C~lear"
+msgstr "~T~yhjenn„"
+
+msgid  "Invalid drive or directory"
+msgstr "M„„rittelem„t”n asema tai hakemisto"
+
+msgid  "Invalid file name."
+msgstr "M„„rittelem„t”n tiedosto nimi."
+
+msgid  "Jan"
+msgstr "Tam"
+
+msgid  "Feb"
+msgstr "Hel"
+
+msgid  "Mar"
+msgstr "Maa"
+
+msgid  "Apr"
+msgstr "Huh"
+
+msgid  "May"
+msgstr "Tou"
+
+msgid  "Jun"
+msgstr "Kes"
+
+msgid  "Jul"
+msgstr "Hei"
+
+msgid  "Aug"
+msgstr "Elo"
+
+msgid  "Sep"
+msgstr "Syy"
+
+msgid  "Oct"
+msgstr "Lok"
+
+msgid  "Nov"
+msgstr "Mar"
+
+msgid  "Dec"
+msgstr "Jou"
+
+msgid  "Invalid character in input"
+msgstr "V„„r„ merkki sy”tteess„."
+
+msgid  "<empty>"
+msgstr "<tyhj„>"
+
+msgid  "Normal"
+msgstr "Normaali"
+
+msgid  "Highlight"
+msgstr "Korostus"
+
+msgid  "Underline"
+msgstr "Alleviivaus"
+
+msgid  "Inverse"
+msgstr "K„„nteinen"
+
+msgid  "~Alt-X~ Exit"
+msgstr "~Alt-X~ Poistu"
+
+msgid  "Value not in the range %U to %U"
+msgstr ""
+
+msgid  "Value not in the range %D to %D"
+msgstr ""
+
+msgid  "Type EXIT to return..."
+msgstr "Kirjaita EXIT palataksesi..."
+
+msgid  "Find"
+msgstr "Etsi"
+
+msgid  "~T~ext to find"
+msgstr "Etsitt„v„ ~t~eksti"
+
+msgid  "~W~hole words only"
+msgstr "~V~ain koko sanat"
+
+msgid  "O~K~"
+msgstr "~O~K"
+
+msgid  "Replace"
+msgstr "Korvaa"
+
+msgid  "~N~ew text"
+msgstr "~U~usi teksti"
+
+msgid  "~P~rompt on replace"
+msgstr "~K~ysy korvaus"
+
+msgid  "~R~eplace all"
+msgstr "Korvaa k~a~ikki"
+
+msgid  "~C~hange dir..."
+msgstr "Muuta ~h~akemistoa..."
+
+msgid  "Not enough memory for this operation."
+msgstr "Ei riitt„v„sti muistia t„h„n toimintoon."
+
+msgid  "Not enough memory for this operation"
+msgstr "Ei riitt„v„sti muistia t„h„n toimintoon"
+
+msgid  "Error reading file "
+msgstr "Virhe tiedostoa luettaessa"
+
+msgid  "Error writing file "
+msgstr "Virhe tiedostoa kirjoitettaessa"
+
+msgid  "Error creating file "
+msgstr "Virhe tiedostoa luotaessa"
+
+msgid  " has been modified. Save?"
+msgstr " on muutunut. Tallenetaanko?"
+
+msgid  "Save untitled file?"
+msgstr "Tallennetetaanko nime„m„t”n tiedosto?"
+
+msgid  "Save file as"
+msgstr "Tallenna tiedosto nimell„"
+
+msgid  "Search string not found."
+msgstr "Etsitty„ merkkijonoa ei l”ytynyt."
+
+msgid  "Replace this occurence?"
+msgstr "Korvataan t„m„ esiintym„?"
+
+msgid  "\r\n"
+"Error! that's an interactive application, don't redirect stdout\r\n"
+"If you want to collect information redirect stderr like this:\r\n"
+"\r\n"
+"program 2> file\r\n"
+"\r\n"
+msgstr ""
+
+msgid  "InfView - File: %s - Node: %s"
+msgstr "InfView - Tiedosto: %s - Solmu: %s"
+
+msgid  "Open Info"
+msgstr ""
+
+msgid  "Searching ..."
+msgstr ""
+
+msgid  "Sorry can't find the string"
+msgstr "Sori vaan, ei l”ydy merkkijonoa"
+
+msgid  "Help Control"
+msgstr "Avun hallinta"
+
+msgid  "~U~p"
+msgstr "~Y~l”s"
+
+msgid  "Prev. ~H~ist."
+msgstr "Edell. ~H~ist."
+
+msgid  "Nodes ~L~ist"
+msgstr ""
+
+msgid  "~B~ookmarks"
+msgstr ""
+
+msgid  "~C~onfiguration"
+msgstr ""
+
+msgid  "~O~pen Info"
+msgstr ""
+
+msgid  "H~i~de"
+msgstr "~P~iilota"
+
+msgid  "Hi~s~tory"
+msgstr "Hi~s~toria"
+
+msgid  "Inf Find"
+msgstr "Etsi tieto"
+
+msgid  "In current ~t~opic"
+msgstr "Vain kyseist„ ~k~ohdasta"
+
+msgid  "In the ~f~ile"
+msgstr "Koko ~t~iedostosta"
+
+msgid  "In ~a~ll files"
+msgstr "~K~aikista tiedostoista"
+
+msgid  "Go To"
+msgstr "Mene"
+
+msgid  "~N~ame of Node"
+msgstr "Kohda~n~ nimi"
+
+msgid  "Tag Table"
+msgstr ""
+
+msgid  "~N~odes"
+msgstr ""
+
+msgid  "InfView Configuration"
+msgstr ""
+
+msgid  "Hide '*~N~ote' word"
+msgstr ""
+
+msgid  "Hide real ~l~ink name"
+msgstr ""
+
+msgid  "InfView Bookmarks"
+msgstr ""
+
+msgid  "~G~o to"
+msgstr ""
+
+msgid  "~M~arks"
+msgstr ""
+
+msgid  "Attention !! this file is in DOS format, Do you want convert it?, "
+"Make a backup first !!"
+msgstr "HUOM! tiedosto on DOS-formaatissa. Haluatko muuntaa sen? (Tee "
+"varmuuskopio ensin!)"
+
+msgid  "Error: can't find the Node info"
+msgstr "Virhe: ei l”ydy t„m„n kohdan tietoa"
+
+msgid  "Reading index table for: "
+msgstr ""
+
+msgid  "InfView"
+msgstr ""
+
+msgid  "Attention can't open the help file."
+msgstr ""
+
+msgid  "Attention can't open the help file '%s'."
+msgstr ""
+
+msgid  "\n"
+" Sorry I can't find this link (press ALT-F1).\n"
+msgstr "\n"
+" Sori, ei l”ydy t„t„ yhteytt„ (paina ALT-F1).\n"
+
+msgid  "Jump to function"
+msgstr ""
+
+msgid  "Hmmm ... I can't find any function, are you sure?"
+msgstr ""
+
+msgid  "Use a file with 1000 lines or more for that"
+msgstr ""
+
+msgid  "Speed: %f lines/second"
+msgstr "Nopeus: %f rivi„/s"
+
+msgid  "Time: %f seconds\n"
+"Speed: %f lines/second\n"
+"%f chars/sec"
+msgstr ""
+
+msgid  "Time: %f seconds\n"
+"Speed: %f lines/second\n"
+"%5.2f%% Editor\n"
+"%f chars/sec"
+msgstr ""
+
+msgid  "No match found"
+msgstr "Ei vastaavutta l”ydetty"
+
+msgid  "Match found at line %d column %d."
+msgstr "Vastaavuus l”ydetty rivilt„ %d sarakkeesta %s."
+
+msgid  "This file contains ASCII 0 values, all the characters after it in "
+"this line becomes invisible. Be careful."
+msgstr ""
+
+msgid  "Parsing file"
+msgstr ""
+
+msgid  "Unhandled syntax highlight"
+msgstr "K„sittelem„t”n syntaksin korostus"
+
+msgid  "Unhandled undo"
+msgstr "K„sittelem„t”n peruutus"
+
+msgid  "Unhandled redo"
+msgstr "K„sittelem„t”n peruutuksen peruutus"
+
+msgid  "Saved: %s (%ld bytes)."
+msgstr "Tallennettu: %s (%ld tavus)"
+
+msgid  "Stat failed."
+msgstr "Tila ep„onnistui."
+
+msgid  "Regular Expressions Options"
+msgstr ""
+
+msgid  "RegEx style"
+msgstr ""
+
+msgid  "~B~asic POSIX"
+msgstr ""
+
+msgid  "~E~xtended POSIX"
+msgstr ""
+
+msgid  "~P~erl Compatible"
+msgstr ""
+
+msgid  "Replace text"
+msgstr ""
+
+msgid  "~N~ormal text"
+msgstr ""
+
+msgid  "~D~olar tags"
+msgstr ""
+
+msgid  "Optimize"
+msgstr ""
+
+msgid  "~T~ry to use normal search"
+msgstr ""
+
+msgid  "E~v~er use RegEx"
+msgstr ""
+
+msgid  "Options"
+msgstr "A~s~etus"
+
+msgid  "Regular e~x~pressions"
+msgstr ""
+
+msgid  "Only ~i~nside comments"
+msgstr ""
+
+msgid  "Only o~u~tside comments"
+msgstr ""
+
+msgid  "~G~lobal"
+msgstr "~G~lobaali"
+
+msgid  "~S~elected text"
+msgstr "~V~alittu teksti"
+
+msgid  "Scope"
+msgstr "Laajuus"
+
+msgid  "~F~rom cursor"
+msgstr "Kurso~r~ilta"
+
+msgid  "~E~ntire scope"
+msgstr "~K~oko laajuus"
+
+msgid  "Origin"
+msgstr "Alkuper„"
+
+msgid  "RegEx ~O~ps"
+msgstr ""
+
+msgid  "Or~i~gin"
+msgstr ""
+
+msgid  "Replace ~A~ll"
+msgstr ""
+
+msgid  "Goto Line"
+msgstr "Mene riville"
+
+msgid  "Desired line"
+msgstr ""
+
+msgid  "Local Options"
+msgstr "Paikalliset asetukset"
+
+msgid  "Options ~3~"
+msgstr ""
+
+msgid  "~O~verwrite"
+msgstr "K~o~rvaa"
+
+msgid  "~A~utoindent"
+msgstr "~A~utomaattinen sisennys"
+
+msgid  "~U~se real tabs (ASCII 9)"
+msgstr ""
+
+msgid  "~P~ersistent blocks"
+msgstr "~P~ersistent blocks"
+
+msgid  "~I~ntelligent C indent"
+msgstr "Žlyk„s C s~i~sennys"
+
+msgid  "~C~olumn cursor"
+msgstr "~S~arake kursori"
+
+msgid  "~R~ow cursor"
+msgstr "~R~ivi kursori"
+
+msgid  "~M~atch pair highlight"
+msgstr ""
+
+msgid  "Match pair on the fly ~4~"
+msgstr ""
+
+msgid  "Tra~n~sparent Blocks"
+msgstr "L„~p~in„kyv„t lohkot"
+
+msgid  "Optimal ~F~ill"
+msgstr ""
+
+msgid  "~W~rap words"
+msgstr ""
+
+msgid  "S~e~e tabs"
+msgstr ""
+
+msgid  "Don't move inside ta~b~s"
+msgstr ""
+
+msgid  "Tab indents ~5~"
+msgstr ""
+
+msgid  "Off ~1~"
+msgstr ""
+
+msgid  "C++ st~y~le"
+msgstr ""
+
+msgid  "Pa~s~cal style"
+msgstr "~P~ascal tyyli"
+
+msgid  "C~l~ipper style"
+msgstr "C~l~ipper tyyli"
+
+msgid  "User ~d~efined"
+msgstr ""
+
+msgid  "Syntax ~H~ighlight"
+msgstr "Syntaksin korostus"
+
+msgid  "~T~ab size"
+msgstr "~T~abulaattorin koko"
+
+msgid  "Wrap column ~2~"
+msgstr ""
+
+msgid  "Global Options"
+msgstr ""
+
+msgid  "~U~se tabs"
+msgstr "K„ytet„„n tab~u~lointeja"
+
+msgid  "Match pair on the fly ~1~"
+msgstr ""
+
+msgid  "~D~on't move the cursor on Paste"
+msgstr "Ž~l~„ siirr„ kursoria liimauksessa"
+
+msgid  "~S~croll Lock centers"
+msgstr ""
+
+msgid  "Wrap co~l~umn"
+msgstr ""
+
+msgid  "T~o~ all"
+msgstr "~K~aikille"
+
+msgid  "Search hit"
+msgstr ""
+
+msgid  "~Y~es"
+msgstr "~K~yll„"
+
+msgid  "~N~o"
+msgstr "~E~i"
+
+msgid  "~A~ll"
+msgstr ""
+
+msgid  "Export Options"
+msgstr ""
+
+msgid  "~F~ile name as title"
+msgstr ""
+
+msgid  "Same ~b~ackground color as the editor"
+msgstr ""
+
+msgid  "~M~onospacied font"
+msgstr ""
+
+msgid  "Bo~l~d attribute"
+msgstr ""
+
+msgid  "Use ~c~olors"
+msgstr ""
+
+msgid  "~D~on't use colors"
+msgstr ""
+
+msgid  "Pseudo Macros"
+msgstr ""
+
+msgid  "Arbitrary indent"
+msgstr ""
+
+msgid  "Indentation text"
+msgstr ""
+
+msgid  "Write to file"
+msgstr "Kirjoitetaan tiedostoon"
+
+msgid  "Read from file"
+msgstr "Luetaan tiedostosta"
+
+msgid  " bytes selected, in "
+msgstr ""
+
+msgid  " lines"
+msgstr ""
+
+msgid  "Line too long, cut it?"
+msgstr "Rivi liian pitk„, leikataan se?"
+
+msgid  "Line extremely long, can't handle it reliably, sorry"
+msgstr ""
+
+msgid  "This file isn't in disk!"
+msgstr ""
+
+msgid  "The file is read-only, try to revert it?"
+msgstr ""
+
+msgid  "Failed to revert the read-only status, you won't be able to "
+"overwrite this file"
+msgstr ""
+
+msgid  "This action doesn't have undo, are you sure?"
+msgstr ""
+
+msgid  " already exist, overwrite?"
+msgstr ""
+
+msgid  " isn't a file, probably a device, go ahead?"
+msgstr ""
+
+msgid  "Can't make a back up file, continue saving?"
+msgstr ""
+
+msgid  "You can't paste a rectangle crossing the end of the file"
+msgstr "Et voi liimata suorakaidetta tiedoston lopun ohi"
+
+msgid  "No pseudo macros available"
+msgstr ""
+
+msgid  "You must install gzip to browse compressed files!"
+msgstr ""
+
+msgid  "Wrong file"
+msgstr ""
+
+msgid  "Wrong version"
+msgstr ""
+
+msgid  "Error while reading"
+msgstr ""
+
+msgid  "Error while loading the keyboard binding"
+msgstr ""
+
+msgid  "You'll lose all the changes"
+msgstr ""
+
+msgid  "Available"
+msgstr ""
+
+msgid  "What to do"
+msgstr ""
+
+msgid  "Action"
+msgstr ""
+
+msgid  "~D~isable"
+msgstr ""
+
+msgid  "~E~nable"
+msgstr "~S~alli"
+
+msgid  "Associated value"
+msgstr ""
+
+msgid  "Value:"
+msgstr ""
+
+msgid  "Do you want to discard the changes?"
+msgstr ""
+
+msgid  "Settings"
+msgstr ""
+
+msgid  "Default global options"
+msgstr ""
+
+msgid  "~N~o SHL"
+msgstr ""
+
+msgid  "New user word"
+msgstr ""
+
+msgid  "Word:"
+msgstr ""
+
+msgid  "List of words"
+msgstr ""
+
+msgid  "User words"
+msgstr ""
+
+msgid  "\n"
+"Error! please run the editor from a valid directory\n"
+"\n"
+msgstr ""
+
+msgid  "Unknown"
+msgstr ""
+
+msgid  "Macro definition don't start with Trigger"
+msgstr "Makro m„„ritys ei ala Triggeri:ll„"
+
+msgid  "Missing Trigger sequence or too short"
+msgstr "Trigger sekvenssi hukattu tai liian lyhyt"
+
+msgid  "Macro definition without mode keyword"
+msgstr "Makro m„„ritys ilman toimintatapa avainsanaa"
+
+msgid  "Wrong mode definition in pseudo macro."
+msgstr "V„„r„ toimintatapa m„„ritys makrossa"
+
+msgid  "Missing start in pseudo macro"
+msgstr "Hukattu alku makrossa"
+
+msgid  "Missing end in pseudo macro"
+msgstr "Hukattu loppu makrossa"
+
+msgid  "Empty pseudo macro"
+msgstr "Tyhj„ pseudo makro"
+
+msgid  "Starting SDG:"
+msgstr ""
+
+msgid  "Error while %s:"
+msgstr ""
+
+msgid  "(%d) %s in line %d"
+msgstr ""
+
+msgid  "In section %s"
+msgstr ""
+
+msgid  "Error of type: %s"
+msgstr ""
+
+msgid  "Code: ...%s..."
+msgstr ""
+
+msgid  "End of SDG"
+msgstr ""
+
+msgid  "SDG Parameters"
+msgstr ""
+
+msgid  "~F~ormat file (.frt)"
+msgstr ""
+
+msgid  "~I~ntermediate file"
+msgstr ""
+
+msgid  "~B~ase output (no extentions)"
+msgstr ""
+
+msgid  "~D~irectory of formats"
+msgstr ""
+
+msgid  "K~e~ep intermediate"
+msgstr ""
+
+msgid  "Regular expression error: %s"
+msgstr ""
+
+msgid  "PCRE Exec error"
+msgstr ""
+
+msgid  "Error in sLisp interpreter:"
+msgstr ""
+
+msgid  "End of SLP"
+msgstr ""
+
+msgid  "No macros defined"
+msgstr ""
+
+msgid  "sLisp macros"
+msgstr ""
+
+msgid  "~M~acros"
+msgstr "~M~acrot"
+
+msgid  "Key assignment"
+msgstr ""
+
+msgid  "Accepting that you'll change the SET's editor behavior"
+msgstr ""
+
+msgid  "Do you really want to discard the changes?"
+msgstr ""
+
+msgid  "Sequence of keys"
+msgstr ""
+
+msgid  "This key is allready in use, do you want to replace it?"
+msgstr ""
+
+msgid  "This sequence is used for more than one key, delete these "
+"assignments first"
+msgstr ""
+
+msgid  "Press a key"
+msgstr ""
+
+msgid  "Key selector"
+msgstr ""
+
+msgid  "Macros"
+msgstr ""
+
+msgid  "Commands"
+msgstr ""
+
+msgid  "A command"
+msgstr ""
+
+msgid  "Scan Viewer"
+msgstr ""
+
+msgid  "~O~k"
+msgstr ""
+
+msgid  "Alt keys settings"
+msgstr ""
+
+msgid  "~L~eft Alt"
+msgstr ""
+
+msgid  "~R~ight Alt"
+msgstr ""
+
+msgid  "~B~oth Alt"
+msgstr ""
+
+msgid  "~K~eys used by the menues, etc."
+msgstr ""
+
+msgid  "Key Pad behavior"
+msgstr ""
+
+msgid  "Mantain the ~B~IOS default"
+msgstr ""
+
+msgid  "Ever interpret shift+arrow as ~m~ovement"
+msgstr ""
+
+msgid  "Behavior"
+msgstr ""
+
+msgid  "Keyboard setup"
+msgstr ""
+
+msgid  "~U~S keyboard and most others"
+msgstr ""
+
+msgid  "~G~reek keyboard (CP 737)"
+msgstr ""
+
+msgid  "Type of keyboard"
+msgstr ""
+
+msgid  "Page: %d Lines: %d to %d  Date: %s  Time: %s%s"
+msgstr ""
+
+msgid  "* Source: %s * Title: %s * Author: %s\n"
+"\n"
+msgstr ""
+
+msgid  "Starting printing module"
+msgstr ""
+
+msgid  "Can't open output file for printing"
+msgstr ""
+
+msgid  "The header is too large, reduce the title and/or author lengths"
+msgstr ""
+
+msgid  "Header length: %d Columns: %d"
+msgstr ""
+
+msgid  "Processed: %d lines, total printed: %d lines"
+msgstr ""
+
+msgid  "Printer Setup"
+msgstr ""
+
+msgid  "Total ~l~ines per page:"
+msgstr ""
+
+msgid  "Columns ~w~/o margin:"
+msgstr ""
+
+msgid  "Left ~m~argin:"
+msgstr ""
+
+msgid  "Print line numbers"
+msgstr ""
+
+msgid  "~T~ime format:"
+msgstr ""
+
+msgid  "~D~ate format:"
+msgstr ""
+
+msgid  "T~i~tle"
+msgstr ""
+
+msgid  "~A~uthor"
+msgstr ""
+
+msgid  "Before ~h~eading"
+msgstr ""
+
+msgid  "A~f~ter heading"
+msgstr ""
+
+msgid  "~B~efore footer"
+msgstr ""
+
+msgid  "After foote~r~"
+msgstr ""
+
+msgid  "~P~rinter initialization"
+msgstr ""
+
+msgid  "O~u~tput file"
+msgstr ""
+
+msgid  "Output is a de~v~ice/file"
+msgstr ""
+
+msgid  "Output i~s~ a program"
+msgstr ""
+
+msgid  "~C~ancel"
+msgstr ""
+
+msgid  "Ho~m~e"
+msgstr ""
+
+msgid  "~T~ree"
+msgstr ""
+
+msgid  "~I~nsert"
+msgstr ""
+
+msgid  "Command~s~"
+msgstr ""
+
+msgid  "Assignmen~t~"
+msgstr ""
+
+msgid  "You must type a value here"
+msgstr "Sinun t„ytyy antaa arvo t„ss„"
+
+msgid  "You can type a value here"
+msgstr "Et voi antaa arvo t„ss„"
+
+msgid  "~V~alue (-1 for none)"
+msgstr "Ar~v~o (-1 = ei mit„„n)"
+
+msgid  " allowed chars "
+msgstr " sallitut merkit "
+
+msgid  "You must type a string here"
+msgstr "Sinun t„ytyy antaa merkkijono t„ss„"
+
+msgid  "You can type a string here"
+msgstr "Et voi antaa merkkijonoa t„ss„"
+
+msgid  "You must type a character here"
+msgstr "Sinun t„ytyy antaa merkki t„ss„"
+
+msgid  "You can type a character here"
+msgstr "Et voi antaa merkki„ t„ss„"
+
+msgid  "Warning: %s is write protected"
+msgstr ""
+
+msgid  "File"
+msgstr "~T~iedosto"
+
+msgid  "Line/Function"
+msgstr "Rivi/Funktio"
+
+msgid  "Condition"
+msgstr "Ehto"
+
+msgid  "Count"
+msgstr "Laskuri"
+
+msgid  "~M~odify"
+msgstr "~M~uuta"
+
+msgid  "D~i~sable"
+msgstr "E~s~t„"
+
+msgid  "~S~how"
+msgstr ""
+
+msgid  "File/L~i~ne"
+msgstr "Tiedosto/R~i~vi"
+
+msgid  "Fu~n~ction"
+msgstr "Fu~n~ctio"
+
+msgid  "~T~ype"
+msgstr "~T~yyppi"
+
+msgid  "F~u~nction"
+msgstr "Fu~n~ctio"
+
+msgid  "~F~ilename"
+msgstr "~T~iedoston nimi"
+
+msgid  "~L~ine"
+msgstr "~R~ivi"
+
+msgid  "Con~d~ition"
+msgstr "Ehto"
+
+msgid  "Coun~t~"
+msgstr "Laskuri"
+
+msgid  "Edit Breakpoint"
+msgstr "Muuta keskeytykohtaa"
+
+msgid  "New Breakpoint"
+msgstr ""
+
+msgid  "BreakPoints"
+msgstr "Keskeytyskohdat"
+
+msgid  "Select a function"
+msgstr "Valitse funktio"
+
+msgid  "return type: "
+msgstr "paluu tyyppi: "
+
+msgid  "file: "
+msgstr "tiedosto:"
+
+msgid  "Output from GDB"
+msgstr "Tuloste GDB:st„"
+
+msgid  "~N~ew value"
+msgstr "~U~usi arvo"
+
+msgid  "~C~hange"
+msgstr "~M~uuta"
+
+msgid  "not available"
+msgstr "ei saatavilla"
+
+msgid  "could not change"
+msgstr "ei voi muuttaa"
+
+msgid  "Change the expression to watch"
+msgstr "Muuta tarkkailtavaa lauseketta"
+
+msgid  "Watch"
+msgstr "Tarkkaile"
+
+msgid  "Evaluate and modify"
+msgstr ""
+
+msgid  "Add to watch list"
+msgstr "Lis„„ tarkkailulistaan"
+
+msgid  "%s\n"
+"\n"
+"(Breakpoint at function '%s' in file %s)"
+msgstr "%s\n"
+"\n"
+"(Keskeytyskohta funktiossa '%s' ja tiedostossa %s)"
+
+msgid  "%s\n"
+"\n"
+"(Breakpoint at line %d in file %s)"
+msgstr "%s\n"
+"\n"
+"(Keskeytyskohta rivill„ %d ja tiedostossa %s)"
+
+msgid  "Program has received signal: "
+msgstr ""
+
+msgid  "For this line is no code generated"
+msgstr "T„lle riville ei ole luotu koodia"
+
+msgid  "Could not find the program. You must build at first the program to "
+"use this function, because the symbols are taken from that file."
+msgstr "Ei l”ydy ohjelmaa. Sinun t„ytyy rakentaa ohjelma ensin k„ytt„„ksesi "
+"t„t„ toimintoa, koska tiedot otetaan tuosta tiedostosta."
+
+msgid  "The selected breakpoint is invalid, probably this file is not "
+"compiled with debugging information or for this line is no code generated."
+msgstr "Valittu keskeytyskohta on ep„kelpo, ehk„ t„t„ tiedostoa ei ole "
+"k„„nnetty 'debug'-tiedolla tai t„lle riville ei ole luotu koodia."
+
+msgid  "This program has no usable debugging information. Try to compile it "
+"with the -g switch."
+msgstr "T„ll„ ohjelmalla ei ole k„ytett„v„„ 'debug' tietoa. Kokeile k„„nt„„ "
+"se '-g' kytkimell„."
+
+msgid  "This breakpoint could not enabled, because you are running under "
+"Windows 3.1x and there the number of breakpoints is limited to 3"
+msgstr "T„t„ keskeytyskohtaa ei valita, koska ajat Windows 3.1x:st„ ja "
+"keskeytyskohtien lukum„„r„ on rajoitettu kolmeen."
+
+msgid  "You have already 3 breakpoints set and under Windows 3.1x the number "
+"of breakpoints is limited to 3"
+msgstr "Sinulla on jo kolme keskeytyskohtaa Windows 3.1x:„n alla, jossa "
+"keskeytyskohtien m„„r„ on rajoitettu kolmeen"
+
+msgid  "Function call stack"
+msgstr ""
+
+msgid  "invalid number"
+msgstr ""
+
+msgid  "Change register value"
+msgstr ""
+
+msgid  "~I~nspect"
+msgstr ""
+
+msgid  "Write block to file"
+msgstr ""
+
+msgid  "Read block from file"
+msgstr ""
+
+msgid  "Base Address"
+msgstr ""
+
+msgid  "Parameter Error!"
+msgstr ""
+
+msgid  "Data window"
+msgstr ""
+
+msgid  "Fill Block"
+msgstr ""
+
+msgid  "~F~rom, length, value"
+msgstr ""
+
+msgid  "Clear Block"
+msgstr ""
+
+msgid  "~F~rom, length"
+msgstr ""
+
+msgid  "Move Block"
+msgstr ""
+
+msgid  "~F~rom, to, length"
+msgstr ""
+
+msgid  "Read Block"
+msgstr ""
+
+msgid  "~T~o, length"
+msgstr ""
+
+msgid  "%u bytes read."
+msgstr ""
+
+msgid  "Write Block"
+msgstr ""
+
+msgid  "%u bytes written."
+msgstr ""
+
+msgid  "~P~athlist"
+msgstr "~P~olku"
+
+msgid  "~P~arameter"
+msgstr "P~a~rametrit"
+
+msgid  "There is an unmatched quote in your arguments"
+msgstr "Parametreissa on p„„ttym„t”n lainaus"
+
+msgid  "Closed"
+msgstr ""
+
+msgid  "Error: "
+msgstr "Virhe: "
+
+msgid  "Warning: "
+msgstr "Varoitus: "
+
+msgid  "about RH~G~DB"
+msgstr ""
+
+msgid  "~Q~uit"
+msgstr "~P~oistu"
+
+msgid  "~I~nspect data"
+msgstr ""
+
+msgid  "~D~irectories for sources"
+msgstr "~L~„hde tiedostojen hakemistot"
+
+msgid  "~L~oad options"
+msgstr "~H~ae asetukset"
+
+msgid  "~U~ser screen"
+msgstr "~K~„ytt„j„n kuvaruutu"
+
+msgid  "~W~indow list"
+msgstr "~I~kkuna lista"
+
+msgid  "~F7~ Trace"
+msgstr "~F7~ j„ljit„"
+
+msgid  "~F8~ Step"
+msgstr "~F8~ Askella"
+
+msgid  "~F4~ Goto"
+msgstr "~F4~ Mene"
+
+msgid  "~^F2~ Reset"
+msgstr "~^F2~ Resetoi"
+
+msgid  "~^F8~ Break"
+msgstr "~^F8~ Katkaisu"
+
+msgid  "~^F4~ Eval"
+msgstr "~^F4~ Laske"
+
+msgid  "~^F9~ Run"
+msgstr "~^F9~ Aja"
+
+msgid  "About RHGDB"
+msgstr ""
+
+msgid  "RHGDB is a source level debugger"
+msgstr ""
+
+msgid  "with Turbo Vision interface"
+msgstr ""
+
+msgid  "based on GDB "
+msgstr ""
+
+msgid  "All windows on the desktop"
+msgstr "Kaikki ikkunat ty”p”yd„ll„"
+
+msgid  "usage: %s [options] exe-file [[arg1 [arg2 ...]]]\n"
+msgstr ""
+
+msgid  "options:\n"
+msgstr ""
+
+msgid  "            -D : Use dual-display debugging\n"
+msgstr ""
+
+msgid  "            -i INI_FILE : Use INI_FILE as config file\n"
+msgstr ""
+
+msgid  "Do you really want to interrupt RHGDB?"
+msgstr ""
+
+msgid  "Save options to file"
+msgstr "Tallenna asetukset tiedostoon"
+
+msgid  "Read options from file"
+msgstr "lue asetukset tiedostosta"
+
+msgid  "Pathlist for source files"
+msgstr "Hakupolku l„hde tiedostoille"
+
+msgid  "~T~absize"
+msgstr "~T~abulaattorin koko"
+
+msgid  "  Char: "
+msgstr ""
+
+msgid  " Decimal: "
+msgstr ""
+
+msgid  " Hex "
+msgstr ""
+
+msgid  "ASCII Chart"
+msgstr ""
+
+msgid  "January"
+msgstr ""
+
+msgid  "February"
+msgstr ""
+
+msgid  "March"
+msgstr ""
+
+msgid  "April"
+msgstr ""
+
+msgid  "June"
+msgstr ""
+
+msgid  "July"
+msgstr ""
+
+msgid  "August"
+msgstr ""
+
+msgid  "September"
+msgstr ""
+
+msgid  "October"
+msgstr ""
+
+msgid  "November"
+msgstr ""
+
+msgid  "December"
+msgstr ""
+
+msgid  "Su Mo Tu We Th Fr Sa"
+msgstr ""
+
+msgid  "Calendar"
+msgstr ""
+
+msgid  "Move"
+msgstr ""
+
+msgid  "Puzzle"
+msgstr ""
+
+msgid  "Mouse options"
+msgstr ""
+
+msgid  "~M~ouse double click"
+msgstr ""
+
+msgid  "Fast       Medium      Slow"
+msgstr ""
+
+msgid  "~R~everse mouse buttons"
+msgstr ""
+

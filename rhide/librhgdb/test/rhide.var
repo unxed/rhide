@@ -1,0 +1,9 @@
+# Copyright (C) 1996-2000 Robert H”hne, see COPYING.RH for details 
+# This file is part of RHIDE. 
+#
+
+include $(RHIDESRC)/rhide.var
+RHIDE_OS_LIBS_DJGPP_gsymify.exe=dbg
+RHIDE_OS_LIBS_DJGPP_mygdb.exe=dbg
+RHIDE_OS_LIBS_DJGPP_listfunc.exe=dbg
+

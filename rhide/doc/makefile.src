@@ -1,0 +1,91 @@
+# Copyright (C) 1996-2000 Robert H”hne, see COPYING.RH for details 
+# This file is part of RHIDE. 
+
+srcdir=$(RHIDESRC)/doc
+VPATH=$(srcdir)
+
+src_files=\
+	  infeng.txi infger.txi infspa.txi \
+	  enum.c Makefile rhide.tx tx2txi.c \
+	  makefile.src rhide.env \
+	  rhide.var doc.gpr doc.mak \
+	  tx2txi.gpr tx2txi.mak
+po_files=
+cfg_files=
+update_files=
+projects=doc tx2txi
+
+subdirs=
+po_subdirs=
+install_info_files=rhide.inf
+install_doc_files=rhide.txt
+
+include $(RHIDESRC)/common.mak
+
+MAKEINFO=makeinfo -I $(srcdir)
+
+all:: doc
+
+TARGETS=rhide.inf rhide.txt
+
+ALL_TARGETS=$(TARGETS) rhide.html rhide.dvi rhide.pdf rhide.ps
+
+doc: $(TARGETS) $(INFVIEW)
+
+all_doc: $(ALL_TARGETS) $(INFVIEW)
+
+info: rhide.inf
+
+tx2txi tx2txi.exe: tx2txi.c
+	gcc -o $@ -O -s $<
+
+rhide.txi: rhide.tx tx2txi
+
+%.txi: %.tx
+	./tx2txi $< $@
+
+rhide_info=$(shell ls rhide.i*)
+
+dvi: rhide.dvi
+
+txt: rhide.txt
+
+ps: rhide.ps
+
+html: rhide.html
+
+pdf: rhide.pdf
+
+rhide.inf: rhide.txi
+
+%.inf: %.txi
+	$(MAKEINFO) --no-split --number-sections --fill-column 75 -o $@ $<
+
+%.ps: %.dvi
+	dvips -o $@ $<
+
+rhide.dvi: rhide.txi
+	texi2dvi $<
+
+rhide.pdf: rhide.txi
+	texi2pdf $<
+
+rhide.html: rhide.txi
+	texi2html $<
+
+rhide.htm: rhide.html
+
+rhide.txt: rhide.txi
+	$(MAKEINFO) --no-split --no-headers --no-validate --fill-column 78 \
+	  --number-sections -Dtext rhide.txi -o $@
+	  
+clean::
+	rm -f *.tmp
+	rm -f *.idx
+	rm -f rhide.??
+	rm -f *.log *.bak *.dsk *.dlg *.aux *.idx *.toc *.num
+	rm -f rhide.ct?
+	rm -f rhide.inf* $(TARGETS) rhide.txi
+	rm -f chap*.htm*
+
+force:

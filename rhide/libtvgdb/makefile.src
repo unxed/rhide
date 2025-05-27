@@ -1,0 +1,24 @@
+# Copyright (C) 1996-2000 Robert H”hne, see COPYING.RH for details 
+# This file is part of RHIDE. 
+#
+
+srcdir=$(RHIDESRC)/libtvgdb
+VPATH=$(srcdir)
+project=libtvgdb
+
+po_files=\
+	breakdia.cc funcsel.cc tbreakli.cc tfuncinp.cc tfunctio.cc \
+	tgdbwind.cc twatchdi.cc twatchli.cc watches.cc userwarn.cc \
+	callstac.cc tregwin.cc tdiswin.cc inspectd.cc \
+	commands.cc tdatawin.cc inspect.cc inspectl.cc tvgdb.cc
+
+src_files=$(po_files) Makefile libtvgdb.gpr libtvgdb.mak makefile.src \
+	  rhide.env rhide.var
+
+projects=libtvgdb
+cfg_files=
+
+subdirs=include
+po_subdirs=
+
+include $(RHIDESRC)/common.mak

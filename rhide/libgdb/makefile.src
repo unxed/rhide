@@ -1,0 +1,194 @@
+# Copyright (C) 1996-2000 Robert H”hne, see COPYING.RH for details 
+# This file is part of RHIDE. 
+
+srcdir=$(RHIDESRC)/libgdb
+VPATH=$(srcdir)
+
+project=
+
+src_files=Makefile makefile.src
+po_files=
+cfg_files=
+
+subdirs=
+po_subdirs=
+
+include $(RHIDESRC)/common.mak
+
+ifeq ($(GDB_SRC),)
+ifeq ($(rhide_OS),DJGPP)
+GDB_SRC=$(DJDIR)/gnu/gdb-5.3
+else
+GDB_SRC=/usr/src/packages/BUILD/gdb-5.3
+endif
+endif
+
+ifeq ($(GDB_OBJ),)
+GDB_OBJ=$(GDB_SRC)
+endif
+
+ifeq ($(strip $(rhide_OS)),DJGPP)
+OS_CFLAGS=-O2
+OS_FLAGS=
+MMALLOC_INC=
+MMALLOC_CFLAGS=-DNO_MMALLOC -DNO_MMALLOC_CHECK
+MMALLOC_LIB=
+MMALLOC_LIB_DIR=
+OS_FLAGS+=MMALLOC=$(MMALLOC) MMALLOC_CFLAGS="$(MMALLOC_CFLAGS)"
+CHECKS=
+EXCLUDE_REGEX=| sed -e '/main.o/d'
+endif
+
+ifneq ($(strip $(rhide_OS)),DJGPP)
+OS_CFLAGS=-DHAVE_CONFIG_H -O2 -DNO_MMALLOC
+#MMALLOC=../mmalloc/libmmalloc.a
+#MMALLOC_INC=o_gdb/mmalloc s_gdb/mmalloc
+CHECKS=
+EXCLUDE_REGEX=| sed -e '/.*gnu-regex.*/d' -e '/main.o/d'
+endif
+
+ifeq ($(strip $(rhide_OS)),CYGWIN)
+EXCLUDE_REGEX=| sed -e '/main.o/d'
+endif
+
+MMALLOC_LIB=$(subst ..,$(GDB_OBJ),$(MMALLOC))
+MMALLOC_LIB_DIR=$(subst /libmmalloc.a,,$(MMALLOC_LIB))
+
+vpath %.a $(GDB_OBJ)/bfd $(GDB_OBJ)/libiberty $(GDB_OBJ)/opcodes $(GDB_OBJ)/readline $(MMALLOC_LIB_DIR)
+
+_INCS=o_gdb/gdb s_gdb/gdb s_gdb/include s_gdb/gdb/config \
+	o_gdb/bfd s_gdb/bfd \
+	o_gdb/opcodes s_gdb/opcodes \
+	o_gdb/readline s_gdb/readline \
+	o_gdb/libiberty s_gdb/libiberty \
+	$(MMALLOC_INC)
+
+INCS=$(subst s_gdb,$(GDB_SRC),$(subst o_gdb,$(GDB_OBJ),$(_INCS)))
+
+INC_PATH=$(addprefix -I,$(INCS))
+
+all:: libgdbrh.h
+
+ifeq ($(LIBGDB_A),)
+all:: libgdbrh.a
+else
+libgdbrh.a: $(LIBGDB_A)
+endif
+
+libgdbrh.c: Makefile
+	echo '#include <defs.h>' > libgdbrh.c
+	echo '#include <breakpoint.h>' >> libgdbrh.c
+	echo '#include <symtab.h>' >> libgdbrh.c
+	echo '#include <symfile.h>' >> libgdbrh.c
+	echo '#include <objfiles.h>' >> libgdbrh.c
+	echo '#include <inferior.h>' >> libgdbrh.c
+	echo '#include <gdb_regex.h>' >> libgdbrh.c
+	echo '#include <expression.h>' >> libgdbrh.c
+	echo '#include <language.h>' >> libgdbrh.c
+	echo '#include <complaints.h>' >> libgdbrh.c
+	echo '#include <coff/internal.h>' >> libgdbrh.c
+	echo '#include <libcoff.h>' >> libgdbrh.c
+	echo '#include <ctype.h>' >> libgdbrh.c
+	echo '#include <string.h>' >> libgdbrh.c
+	echo '#include <buildsym.h>' >> libgdbrh.c
+	echo '#include <gdb-stabs.h>' >> libgdbrh.c
+	echo '#include <stabsread.h>' >> libgdbrh.c
+	echo '#include <gdbcmd.h>' >> libgdbrh.c
+	echo '#include <setjmp.h>' >> libgdbrh.c
+	echo '#include <demangle.h>' >> libgdbrh.c
+	echo '#include <annotate.h>' >> libgdbrh.c
+	echo '#include <top.h>' >> libgdbrh.c
+	echo '#include <floatformat.h>' >> libgdbrh.c
+	echo '#include <version.h>' >> libgdbrh.c
+	echo '#include <parser-defs.h>' >> libgdbrh.c
+	-sh -c "test -f $(GDB_SRC)/gdb/regcache.h && echo '#include <regcache.h>' >> libgdbrh.c"
+
+LIBGDB_FLAGS+=$(OS_FLAGS)
+override CFLAGS+=$(OS_CFLAGS)
+
+gdbsrc=$(shell echo $(GDB_SRC) | sed "s,^\([a-zA-Z]\):,/dev/\1,g")
+
+GDB_CONFIG_$(rhide_OS)=CC=gcc $(GDB_SRC)/configure
+GDB_CONFIG_DJGPP=sh $(GDB_SRC)/gdb/config/djgpp/djconfig.sh $(gdbsrc)
+#GDB_CONFIG_CYGWIN=CC=gcc gt_cv_func_gettext_libintl='yes' $(GDB_SRC)/configure --without-included-gettext
+GDB_CONFIG_CYGWIN=CC=gcc $(GDB_SRC)/configure --disable-nls
+
+$(GDB_OBJ)/Makefile:
+	sh -c "cd $(GDB_OBJ) && $(GDB_CONFIG_$(rhide_OS))"
+
+$(GDB_OBJ)/bfd/bfd.h: $(GDB_OBJ)/Makefile
+	$(MAKE) -C $(dir $@) $(notdir $@)
+
+ifneq ($(LIBGDB_H),)
+libgdbrh.h: $(LIBGDB_H)
+	cat $(LIBGDB_H) > libgdbrh.h
+else
+libgdbrh.h: $(GDB_OBJ)/bfd/bfd.h libgdbrh.c gdb_ver.txt
+	gcc -E $(INC_PATH) $(CFLAGS) $(MMALLOC_CFLAGS) \
+	  $(shell sed -n 's,^REGEX_CFLAGS = \(.*\),\1,p' $(GDB_OBJ)/gdb/Makefile) \
+	  libgdbrh.c \
+	  | sed -e '/^[ 	]*$$/d' -e '/^#define __STDC.*$$/d' > libgdbrh.h
+	gcc -E -P -dM $(INC_PATH) $(CFLAGS) $(MMALLOC_CFLAGS) libgdbrh.c \
+	  | sed -e '/^[ 	]*$$/d' -e '/^#define __STDC.*$$/d' >> libgdbrh.h
+	cat gdb_ver.txt >> libgdbrh.h
+endif
+
+optional_subdirs=mi di
+sub_dirs=$(subst $(GDB_OBJ)/gdb/,,$(wildcard $(addprefix $(GDB_OBJ)/gdb/,$(optional_subdirs))))
+sub_dir=$(subst .tt,,$@)
+
+%.tt: libgdb-files
+	echo $(wildcard $(subst $(sub_dir)/,,$(subst .c,.o,$(subst $(GDB_SRC),$(GDB_OBJ),\
+	     $(wildcard $(GDB_SRC)/gdb/$(sub_dir)/*.c))))) > $@
+
+gdb.t: libgdb-files
+	printf "%s\n" $(shell cat $<) | sed -n -e 's,^.*\.o,$(GDB_OBJ)/gdb/&,p' $(EXCLUDE_REGEX) > $@
+
+%.t: %.a
+	ar t $< | sed -e 's,^.*\.o,$(dir $<)&,' > $@
+
+libbfd.t: $(GDB_OBJ)/bfd/libbfd.a
+libiberty.t: $(GDB_OBJ)/libiberty/libiberty.a
+libopcodes.t: $(GDB_OBJ)/opcodes/libopcodes.a
+libreadline.t: $(GDB_OBJ)/readline/libreadline.a
+libmmalloc.t: $(GDB_OBJ)/mmalloc/libmmalloc.a
+
+$(GDB_OBJ)/%.a:
+#	$(MAKE) -C $(dir $@) $(notdir $@) CFLAGS="$(CFLAGS)" $(LIBGDB_FLAGS)
+	$(MAKE) -C $(dir $@) CFLAGS="$(CFLAGS)" $(LIBGDB_FLAGS)
+
+libgdb-files: force
+#	$(MAKE) -C $(GDB_OBJ)/gdb CFLAGS="$(CFLAGS)" $(LIBGDB_FLAGS)
+	$(MAKE) -C $(GDB_OBJ) CFLAGS="$(CFLAGS)" $(LIBGDB_FLAGS)
+	ls $(GDB_OBJ)/gdb/*.o | sed s,$(GDB_OBJ)/gdb/,,g > $@
+
+T_FILES=libbfd.t libiberty.t libopcodes.t libreadline.t \
+	$(notdir $(subst .a,.t,$(MMALLOC_LIB))) gdb.t \
+	$(addsuffix .tt,$(optional_subdirs))
+
+list: $(T_FILES)
+
+ifeq ($(LIBGDB_A),)
+libgdbrh.a: $(CHECKS) libgdbrh.h list
+	rm -f libgdbrh.a
+# do not use any xmalloc.o, because it is defined in utils.o
+	ar rcs $@ $(shell cat $(T_FILES) | sed -e '/.*xmalloc.*/d')
+	rm -f $(T_FILES) libgdb-files
+endif
+
+$(GDB_OBJ)/gdb/version.o: $(GDB_OBJ)/Makefile
+	$(MAKE) -C $(dir $@) $(notdir $@)
+	
+echo_ver.exe: $(GDB_OBJ)/gdb/version.o
+	echo 'int main(int argc, char **argv)\
+	  {extern const char version[];printf("%s\n",version);return 0;}' | \
+	gcc -s -o $@ $< -x c -
+
+gdb_ver.txt: echo_ver.exe
+	./$< | sed -e "s,\.,,g" \
+	  -e "s,.*,#define GDB_VERSION &,1" > $@
+	
+
+force:
+
+

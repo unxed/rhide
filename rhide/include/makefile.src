@@ -1,0 +1,30 @@
+# Copyright (C) 1996-2000 Robert H”hne, see COPYING.RH for details 
+# This file is part of RHIDE. 
+#
+
+srcdir=$(RHIDESRC)/include
+VPATH=$(srcdir)
+
+project=
+
+po_files=pal.hxx
+src_files=$(po_files)\
+	  ideapp.h ideconst.h rhide.h \
+	  Makefile rhidehis.h makefile.src pal.h
+cfg_files=
+
+subdirs=flags
+po_subdirs=
+
+include $(RHIDESRC)/common.mak
+
+pal.hxx: pal.h
+	gecho "#include \"pal.h\"\n"\
+	  "#undef S\n#define S(x,y,z,name,comment...) __(#name)\n"\
+	  "#undef S_\n #define S_(x,y,z,name,group,comment...) "\
+	  " __(#name) __(#group)\ncpIDEColor" |\
+		gcc -E -I$(srcdir) - | sed -e '/^[	 ]*$$/d' \
+	  -e '/^#.*$$/d' > __.hh
+	$(move-if-change) __.hh $@
+
+

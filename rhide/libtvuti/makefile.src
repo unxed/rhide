@@ -1,0 +1,26 @@
+# Copyright (C) 1996-2000 Robert H”hne, see COPYING.RH for details 
+# This file is part of RHIDE. 
+#
+
+srcdir=$(RHIDESRC)/libtvuti
+VPATH=$(srcdir)
+project=libtvuti
+
+po_files=\
+	bigmessa.cc editdirl.cc editpara.cc tdirlist.cc \
+	tenterin.cc tenterli.cc tenterra.cc tintinpu.cc tlbutton.cc \
+	tmeminfo.cc tparamli.cc tscollec.cc twindowl.cc windowli.cc \
+	tenterch.cc history.cc tcheckdi.cc tmsgcoll.cc tmsglist.cc \
+	msgrec.cc tmemstrm.cc cmd.cc commands.cc execdial.cc ihistory.cc
+
+src_files=$(po_files) Makefile libtvuti.gpr libtvuti.mak makefile.src \
+	  rhide.env rhide.var configure configure.in config.hin
+
+projects=libtvuti
+cfg_files=
+
+subdirs=include names stream
+po_subdirs=
+
+include $(RHIDESRC)/common.mak
+

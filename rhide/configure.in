@@ -1,0 +1,180 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.50)
+AC_INIT(idemain.cc)
+AC_PROG_CC
+AC_CANONICAL_HOST
+AC_CONFIG_SUBDIRS(libtvuti)
+
+case "$host" in
+  i?86-*-linux*) rhide_OS=Linux ;;
+  i?86-pc-msdosdjgpp) rhide_OS=DJGPP ;;
+  *-pc-cygwin) rhide_OS=CYGWIN ;;
+  *) AC_MSG_ERROR([$host is not supported (yet). Sorry.]) ;;
+esac
+AC_SUBST(rhide_OS)
+AC_ARG_WITH(dummy-iconv,[--with-dummy-iconv  use dummy iconv function to reduce executable size],
+[DUMMY_ICONV=yes])
+
+dnl This fixes the annoing bug in autoconf which
+dnl does not handle correct drive letters in diretories
+dnl I save at first the original srcdir and translate
+dnl it then to the /dev/drive_letter syntax. In the
+dnl config files I should refere then abs_srcdir instead
+dnl of srcdir
+
+abs_srcdir=`cd $srcdir && pwd`
+changequote(, )dnl
+if test "$rhide_OS" = DJGPP; then
+  srcdir=`echo $abs_srcdir | sed "s,^\([a-zA-Z]\):,/dev/\1,g"`
+  abs_srcdir=`echo $srcdir | sed "s,^/dev/\([a-zA-Z]\)/,\1:/,g"`
+fi
+changequote([, ])dnl
+AC_SUBST(abs_srcdir)
+
+if test "$rhide_OS" = DJGPP; then
+  AC_CHECK_LIB(c,gettext,
+  [CONIO_PATCH=$abs_srcdir/conio.o],
+  [CONIO_PATCH=])
+fi
+AC_SUBST(CONIO_PATCH)
+
+TV_INC_SEARCH="$abs_srcdir/../tvision/include \
+$DJDIR/contrib/tvision/include \
+$DJDIR/include/rhtvision \
+/usr/local/src/tvision/include \
+/usr/src/tvision/include \
+/usr/local/include/rhtvision \
+/usr/include/rhtvision"
+RH_CHECK_FILE_LIST(TV_INC, tv.h, $TV_INC_SEARCH,[Turbo Vision header files])
+
+TV_OBJ_SEARCH="$TV_INC/../`echo $rhide_OS | sed -e s,Linux,linux,g -e s,CYGWIN,win32,g` \
+$TV_INC/../../lib"
+RH_CHECK_FILE_LIST(TVOBJ, librhtv.a, $TV_OBJ_SEARCH,[Turbo Vision libraray])
+
+SETSRC_SEARCH="$abs_srcdir/../setedit \
+$DJDIR/contrib/setedit \
+/usr/local/src/setedit \
+/usr/src/setedit"
+RH_CHECK_FILE_LIST(SETSRC,mainsrc/ceditor.cc,$SETSRC_SEARCH,[SET's editor sources])
+
+RH_CHECK_FILE_LIST(SETOBJ,libset.a,$SETSRC/makes,[SET's editor libraries])
+
+SET_SPECIAL_LDFLAGS=
+AC_CHECK_LIB(c,bindtextdomain,
+[LIB_INTL=],
+[LIB_INTL=no])
+
+if test "x$LIB_INTL" = xno; then
+  AC_MSG_CHECKING([needed libs for gettext])
+  rh_save_LIBS="$LIBS"
+  LIBS="-lintl $LIBS"
+  AC_TRY_LINK([#include <libintl.h>
+  #include <stdio.h>],printf(gettext("test")),
+  [LIB_INTL=intl])
+  LIBS="$rh_save_LIBS"
+  if test "x$LIB_INTL" = xno; then
+    rh_save_LIBS="$LIBS"
+    if test "x$DUMMY_ICONV" != x; then
+      LIBS="iconv.o -lintl $LIBS"
+      ICONV_O=`pwd`/iconv.o
+      ICONV_L=
+      $CC -o iconv.o -DUSE_DUMMY_ICONV -c $abs_srcdir/iconv.c
+    else
+      ICONV_O=
+      ICONV_L=iconv
+      LIBS="-lintl -liconv $LIBS"
+    fi
+    AC_TRY_LINK([#include <libintl.h>
+    #include <stdio.h>],
+    printf(gettext("test")),
+    [LIB_INTL="intl $ICONV_L"
+     SET_SPECIAL_LDFLAGS="$ICONV_O $SET_SPECIAL_LDFLAGS"])
+    LIBS="$rh_save_LIBS"
+  fi
+  if test "x$LIB_INTL" = xno; then
+    rh_save_libs="$LIBS"
+    LIBS="iconv.o -lintl $LIBS"
+    $CC -o iconv.o -DUSE_DUMMY_ICONV -c $abs_srcdir/iconv.c
+    AC_TRY_LINK([#include <libintl.h>
+    #include <stdio.h>],printf(gettext("test")),
+    [LIB_INTL=intl
+     SET_SPECIAL_LDFLAGS="`pwd`/iconv.o $SET_SPECIAL_LDFLAGS"])
+    LIBS="$rh_save_libs"
+  fi
+  AC_MSG_RESULT([$LIB_INTL])
+fi
+if test "x$LIB_INTL" = xno; then
+  AC_MSG_WARN([found not usable library providing gettext,
+ using now a dummy one])
+  LIB_INTL=tvfintl
+  SET_SPECIAL_LDFLAGS="$SET_SPECIAL_LDFLAGS -L$TVOBJ/../intl/dummy"
+fi
+AC_SUBST(LIB_INTL)
+
+gdb_version="gdb-5.3"
+
+GDB_SRC_SEARCH="$abs_srcdir/../$gdb_version \
+$DJDIR/gnu/$gdb_version \
+/usr/local/src/$gdb_version \
+/usr/src/$gdb_version"
+RH_CHECK_FILE_LIST(GDB_SRC,gdb/main.c,$GDB_SRC_SEARCH,[GDB sources],[trying older version])
+
+if test "$GDB_SRC" = no; then
+  gdb_version="gdb-5.0"
+
+  GDB_SRC_SEARCH="$abs_srcdir/../$gdb_version \
+  $DJDIR/gnu/$gdb_version \
+  /usr/local/src/$gdb_version \
+  /usr/src/$gdb_version"
+  RH_CHECK_FILE_LIST(GDB_SRC_OLD,gdb/main.c,$GDB_SRC_SEARCH,[GDB sources])
+  GDB_SRC="$GDB_SRC_OLD"
+fi
+
+AC_CACHE_CHECK([GDB objects],GDB_OBJ,
+[
+if test "$rhide_OS" = DJGPP; then
+  GDB_OBJ=$GDB_SRC
+else
+mkdir gdb_obj
+GDB_OBJ=`pwd`/gdb_obj
+fi
+AC_SUBST(GDB_OBJ)
+])
+
+SET_LIBS="pcre bz2 z"
+if test -f $SETOBJ/libeasyd.a; then
+  SET_LIBS="$SET_LIBS easyd settv"
+else
+  SET_SPECIAL_LDFLAGS="$SET_SPECIAL_LDFLAGS $SET_OBJ/easydiag.a"
+fi
+
+AC_CHECK_LIB(bz2,BZ2_bzlibVersion,
+[],
+[SET_SPECIAL_LDFLAGS="$SET_SPECIAL_LDFLAGS -L$SETOBJ/../libbzip2"])
+
+AC_CHECK_LIB(z,zlibVersion,
+[],
+[SET_SPECIAL_LDFLAGS="$SET_SPECIAL_LDFLAGS -L$SETOBJ/../libz"])
+
+AC_CHECK_LIB(pcre,pcre_version,
+[],
+[SET_SPECIAL_LDFLAGS="$SET_SPECIAL_LDFLAGS -L$SETOBJ/../libpcre"])
+
+SET_LIBS="$SET_LIBS rhtv"
+
+AC_CHECK_HEADERS(X11/keysym.h,
+[SET_SPECIAL_LDFLAGS="$SET_SPECIAL_LDFLAGS -L/usr/X11/lib" SET_LIBS="$SET_LIBS X11"],
+[])
+
+AC_SUBST(SET_SPECIAL_LDFLAGS)
+AC_SUBST(SET_LIBS)
+
+AC_OUTPUT(config.env:config.in)
+$abs_srcdir/configure.sub $abs_srcdir
+
+
+
+
+
+
